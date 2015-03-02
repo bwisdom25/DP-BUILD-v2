@@ -244,6 +244,7 @@ th {
   }
   .navbar {
     display: none;
+    z-index: 999;
   }
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -1114,8 +1115,11 @@ img {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
+  margin-right: auto;
+  margin-left: auto;  
   max-width: 100%;
   height: auto;
+
 }
 .img-rounded {
   border-radius: 6px;
@@ -3856,13 +3860,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   margin-top: 150px;
   bottom: 0;
   width: 100%;
   height: auto;
   background-color: #3488C4;
-  z-index: -1;
+  z-index: 0;
 }
 
 .footer .container {
@@ -4223,6 +4227,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar > .container-fluid .navbar-brand {
     margin-left: -47px;
     margin-top: -10px;
+
   }
 }
 .navbar-toggle {
@@ -4236,6 +4241,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-image: none;
   border: 2px solid transparent;
   border-radius: 5px;
+  z-index: 1000;
 }
 .navbar-toggle:focus {
   outline: 0;
@@ -4255,6 +4261,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-nav {
+  position: relative;
   margin: 7.5px -15px;
   background-color: #3488C4;
   border: 2px solid #000;
@@ -6197,6 +6204,7 @@ button.close {
 }
 .carousel {
   position: relative;
+  top:20px;
 }
 .carousel-inner {
   position: relative;
@@ -6287,6 +6295,7 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   filter: alpha(opacity=50);
   opacity: .5;
+
 }
 .carousel-control.left {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
