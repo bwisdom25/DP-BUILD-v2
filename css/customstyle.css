@@ -1,0 +1,53 @@
+/*COMPANY INFO TOP RIGHT */
+.navheader-topright { 
+	position: absolute; 
+	right: 0px; 
+	font-family:'Oswald', 
+	sans-serif; 
+}
+.navheader-topright .title { 
+	display: block; 
+	color: black; 
+	font-size: 50px; 
+	font-family: inherit; 
+	padding: 0; 
+	margin: -5px 5px -10px 0px;
+	text-shadow: -1px -1px 0px #FFF, 
+	              1px -1px 0px #fff, 
+	              -1px 1px 0px #fff, 
+	              1px 1px 0px #fff; 
+}
+.navheader-topright .company-info { 
+	display: block; 
+	font-size: 20px; 
+	color: white; 
+	font-family: 
+	inherit; 
+	padding: 0; 
+	margin: -2px 5px -2px 0; 
+	clear: right; 
+}
+.navheader-topright .telefono { 
+	display: block; 
+	font-size: 25px; 
+	color: white; 
+	font-family: inherit; 
+	padding: 0; 
+	margin: 0 5px 0 0; 
+	clear: right;
+	text-shadow: -1px -1px 0px #000,
+				  1px -1px 0px #000,
+				  -1px 1px 0px #000,
+				  1px 1px 0px #000;
+}
+.navheader-topright a { 
+	opacity: .6; 
+	display: block; 
+	padding: 0 px; 
+	margin: 0 5px; 
+	float: right;
+	transition: opacity 0.2s; }
+
+.navheader-topright > a:hover { 
+	opacity: 1;
+}
