@@ -51,3 +51,22 @@
 .navheader-topright > a:hover { 
 	opacity: 1;
 }
+
+.carousel {
+	margin-top: 20px;
+}
+
+.item .thumb {
+	width: 25%;
+	cursor: pointer;
+	float: left;
+}
+
+.item .thumb img {
+	width: 100%;
+	padding: 5px;
+}
+
+.item img {
+	width: 100%;
+}
