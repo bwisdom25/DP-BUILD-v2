@@ -53,7 +53,8 @@
 }
 
 .carousel {
-	margin-top: 20px;
+	margin-bottom: 10px;
+	top: 0px;
 }
 
 .item .thumb {
@@ -63,10 +64,31 @@
 }
 
 .item .thumb img {
-	width: 100%;
+	width: 75%;
 	padding: 5px;
 }
 
 .item img {
 	width: 100%;
 }
+
+#product-table {
+	font-family: 'Rajdhani', sans-serif;
+	margin-bottom: 0px;
+	font-weight: bold;
+	font-size: 1.3vw;
+}
+.buynow-button{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-size: 50px;
+	border-radius: 10px;
+    width: 100%;
+	background-color: #C51A2D;
+	color:#fff;
+    text-shadow: -2px -2px 0px #000,
+				  2px -2px 0px #000,
+				  -2px 2px 0px #000,
+				  2px 2px 0px #000;
+
+};
