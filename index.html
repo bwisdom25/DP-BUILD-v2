@@ -10,7 +10,7 @@
     <!-- Bootstrap -->
     <link href="lib/css/bootstrap.css" rel="stylesheet">
     <link href="lib/css/customstyle.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='lib/fonts/Oswald-Regular.tff' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +39,7 @@
             <div class="navheader-topright">
               <p class="title">Dr Pharm USA</p>
               <p class="company-info" align="right">Denver, CO &#183; USA</p>
-              <p class="telefono" align="right">303.327.4704</p>
+              <p class="telefono" align="right">1-866-778-7826</p>
               <a href="#">
                   <img src="lib/images/logos/logo_vimeo_blue.png" width="16" height="16">
               </a>
@@ -68,7 +68,7 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Equipment<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Capsule Fillers</a></li>
+                  <li><a href="lib/products/capsule_fillers/capsule_fillers.html">Capsule Fillers</a></li>
                   <li><a href="#">Tablet Presses</a></li>
                   <li><a href="#">Counting Lines</a></li>
                   <li><a href="#">Coating Machines</a></li>
@@ -107,12 +107,16 @@
       <div class="item">
         <img src="lib/images/main carousel/main_carousel_factory.jpg" alt="...">
         <div class="carousel-caption">
-
+          <h1>High Precision Quality</h1>
+          <h3>Each part is made to proper specification and quality assurance</h3>
         </div>
       </div>
       <div class="item">
         <img src="lib/images/main carousel/main_carousel_buildingconcept.jpg" alt="...">
         <div class="carousel-caption">
+           <h1>Dr. Pharm Global Brand</h1>
+           <h3>New facility adds ONE MILLION square feet in production facitiy size</h3>
+
         </div>
       </div>
     </div>
@@ -130,27 +134,50 @@
 
 <div class= "container">
   <div class="row">
+    <div class="col-md-4">
+        <h2 style="text-align: center;">Automatic Capsule Fillers</h2>
+        <a href="#">
+          <img src="lib/images/products/capsule/capsule_2000_product.jpg" width="325">
+        </a>
+        <p>With some of the most highest output models in the world, Dr Pharm is a global leader in providing quality automatic capsule filling equipment. The tamping style capsule filler provides high filling accuracy at an affordable cost.</p>
+    </div>
+    <div class="col-md-4">
+      <h2 style="text-align: center;">Counting Lines</h2>
+        <a href="#">
+          <img src="lib/images/products/counter/CZG80_16.jpg" width="360" style="display: block; margin-left: auto; margin-right: auto;">
+        </a>
+        <p>Our advanced vibratory lane counter is capable of dispensing a set number of capsule and tablets of many sizes. Complete lines are available to fully automate your packaging process from start to finish. Introductary to high speed lines are available. </p>
+    </div>
+    <div class="col-md-4">
+      <h2 style="text-align: center;">Tablet Press Equipment</h2>
+        <a href="#">
+          <img src="lib/images/products/tablet_press/tablet_GZP40_product.jpg" width="300" style="display: block; margin-left: auto; margin-right: auto;">
+        </a>
+        <p>Dr. Pharm is proud to present the automatic tablet press equipment lines. For those who are making the next step to high speed and high output, Dr. Pharm has a model suitable for your application!</p>
+    </div>
+  </div>
+  <div class="row">
     <div class= "col-md-8 col-xs-12">
-      <h2>Something Something Equipmunk</h2>
-        <p>Dr. Pharm is the manufactuer for high precsion equipmunk for <strong>All solid dose production needs!</strong> 
-           From starting companies to high production facilites, Dr. Pharm is pleased to provide equipmunk and expert 
+      <h2>Solid Dose Equipment</h2>
+        <p><strong>Dr. Pharm</strong> is a globally recognized leader for high precsion equipment for <strong>All solid dose production needs!</strong> 
+           From starting companies to high production facilites, Dr. Pharm is pleased to provide equipment and expert 
            assistance.</p>
         <p><a class="btn btn-default" href="#" role="button">View Details &raquo;</a></p>
     </div>
     <div class= "col-md-4"> 
-      <h2> VIDEOS?...YEAH WE GOT THEM!!</h2>
-        <p>Check our bitchin' videos on our new YouTube Channel. <strong>You Won't Regret It!</strong></p>
-        <p><a class="btn btn-default" href="#" role-"button">Melt My Eyeballs from Awesomeness!</a></p>
+      <h2> New YouTube Video Channel</h2>
+        <p>Check all equipment videos on our new and improved YouTube Channel. <strong></strong></p>
+        <p><a class="btn btn-default" href="#" role-"button">View</a></p>
     </div>
   </div>
   <div class="row">
     <div class="col-md-4">
-      <h2>Tablet Press Equipmunk</h2>
-        <p>Blah blah blah tablet press blah blah blah tablets blah blah blah tooling blah blah blah...</p>
+      <h2>Tablet Press Equipment</h2>
+        <p>Dr. Pharm is proud to present the automatic tablet press equipment lines. For those who are making the next step to high speed and high output, Dr. Pharm has a model suitable for your application!</p>
     </div>
     <div class="col-md-4">
       <h2>Automatic Capsule Fillers</h2>
-        <p>Can't afford a Bosch...We got you covered. Our CFM 3500 will spit out capsules faster than you can even say Bosch!</p>
+        <p>With some of the most highest output models in the world, Dr Pharm is a global leader in providing quality automatic capsule filling equipment. The tamping style capsule filler provides high filling accuracy at an affordable cost.</p>
     </div>
     <div class="col-md-4">
       <h2>Bins &amp; Blenders </h2> 
@@ -195,7 +222,10 @@
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- RUNNING ON LOCAL BOX (NO INTRANETS)
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  -->
+  <script src="lib/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="lib/js/bootstrap.min.js"></script>
   </body>
