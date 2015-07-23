@@ -51,6 +51,22 @@
 .navheader-topright > a:hover { 
 	opacity: 1;
 }
+#nav-container{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: auto;
+}
+.navheader-logoleft {
+	height: 100%;
+}
+
+.logo-img {
+	margin: auto;
+}
+.navheader-logoright{
+	float: right;
+}
 
 .carousel {
 	margin-bottom: 10px;
