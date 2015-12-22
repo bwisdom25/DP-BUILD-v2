@@ -21,55 +21,68 @@
     <![endif]-->
   </head>
   <body>
-
-      <!-- Static navbar -->
+    <script src="../../../js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../js/jquery.magnific-popup.js"></script>
       <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-
-            <a class="navbar-brand" href="#">
-            	<img alt="Dr Pharm" src="../../../images/logos/logo_drpharm_D.png" width="175" height="175">
-            </a>
-
-            <div class="navheader-topright">
-              <p class="title">Dr Pharm USA</p>
-              <p class="company-info" align="right">Denver, CO &#183; USA</p>
-              <p class="telefono" align="right">303.327.4704</p>
-              <a href="#">
-                  <img src="../../../images/logos/logo_vimeo_blue.png" width="16" height="16">
-              </a>
-              <a href="https://www.youtube.com/channel/UCRjK7yDAc7HHGqEzGiiZDow">
-                  <img src="../../../images/logos/logo_youtube_white.png" width="16" height="16">
-              </a>
-                      <a href="https://plus.google.com/u/0/+KevinWeber/posts">
-                  <img src="../../../images/logos/logo_google_white.png" width="16" height="16">
-              </a>
-              <a href="https://www.linkedin.com/">
-                  <img src="../../../images/logos/logo_linkedin_blue.png" width="16" height="16">
-              </a>
-              <a href="#">
-                  <img src="../../../images/logos/logo_twitter_white.png" width="16"  height="16">
-              </a>
-              <a class="facebook_ico" href="https://www.facebook.com/drpharmusa">
-                  <img src="../../../images/logos/logo_facebook_white.png" width="16" height="16">
-              </a>
+        <div id="nav-container" class="container">
+          <div class="row">
+            <div id="left_title"class="col-md-4">
+              <div class="navheader-logoleft">
+                <a href="#">
+                  <img src="../../../images/logos/logo_rightstuff.png" alt="Right Stuff Equipment Logo" width="150" height="181">
+                </a>
+              </div>
+              <div class="navheader-titleleft">
+                <p>Engineering, Integration, Manufacturing, and Exclusive provider of Dr. Pharm Equipment in the USA</p>
+                <h4>Denver</h4>
+              </div>
             </div>
-         </div>
+            <div class="col-md-4">
+              <div class="navheader-titlecenter">
+                <h1 class="title">Dr.  Pharm  USA</h1>
+                <!--
+                <a href="https://www.youtube.com/channel/UCRjK7yDAc7HHGqEzGiiZDow">
+                    <img src="lib/images/logos/logo_youtube_white.png" width="16" height="16">
+                </a>
+                        <a href="https://plus.google.com/u/0/+KevinWeber/posts">
+                    <img src="lib/images/logos/logo_google_white.png" width="16" height="16">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img src="lib/images/logos/logo_linkedin_blue.png" width="16" height="16">
+                </a>
+                <a href="#">
+                    <img src="lib/images/logos/logo_twitter_white.png" width="16"  height="16">
+                </a>
+                <a class="facebook_ico" href="https://www.facebook.com/drpharmusa">
+                    <img src="lib/images/logos/logo_facebook_white.png" width="16" height="16">
+                </a>
+              -->
+                <p class="telefono">1-866-778-7826</p>
+              </div>
+            </div>
+            <div id="right_title" class="col-md-4">
+              <div class="navheader-titleright">
+                <p>Global Equipment Supplier to the Pharmaceutical &amp; Supplement Industries.</p>
+                <h4>Beijing</h4>
+              </div>
+              <div class="navheader-logoright">
+                <a href="#">
+                  <img class="logo-img" src="../../../images/logos/logo_dr_pharm_new_outline.png" alt="Dr Pharm Logo" width="167"  height="181">
+                </a>
+              </div>
+            </div>
+          </div>
 
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><a href="../../../../index.html">Home</a></li>
+              <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li class="dropdown active">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Equipment<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="../capsule_fillers.html">Capsule Fillers</a></li>
+                  <li><a href="lib/products/capsule_fillers/">Capsule Fillers</a></li>
                   <li><a href="#">Tablet Presses</a></li>
                   <li><a href="#">Counting Lines</a></li>
                   <li><a href="#">Coating Machines</a></li>
@@ -85,8 +98,8 @@
               <li id="last-child"><a href="#">Contact</a></li>
             </ul>
           </div>
-        </div><!--/.nav-collapse -->
-      </nav>
+      </div><!--end container-->
+    </nav>
 
       <div class="container">
         <div class="row">
@@ -234,43 +247,73 @@
     </div>
   </div>
 </div>
-
-
-          <footer class="footer">
-      <div class="container">
-        <div id="top-footer" class="row text-center">
-          <div class="col-md-4">
-            <p>Sales &amp; Support</p>
-            <a href="#">sales@drpharm-usa.com</a>
-          </div>
-          <div class="col-md-4">
-            <h4>Dr Pharm USA<br>1605 E. 69th Ave<br>Denver, CO &#183; USA 80229</h4>
-          </div>
-          <div class="col-md-4">
-            <p>Parts &amp; Services</p>
-            <a href="#">parts@drpharm-usa.com</a>
-          </div>
-        </div>
-        <div id="bottom-footer" class="row text-center">
-          <div class="col-md-4">
-            <h6>&#169; Dr Pharm USA. All Rights Reserved </h6>
-          </div>
-          <div class="col-md-4">
-            <a href="#">Contact Us &#183; </a>
-            <a href="#">Resources &#183; </a>
-            <a href="#">Privacy &#183; </a>
-            <a href="#">Terms &#183; </a>
-            <a href="#">Financing</a>
-          </div>
-          <div class="col-md-4">
-          </div>
-        </div>
+<footer class="footer">
+  <div id="footer-container" class="container">
+    <div id="top-footer" class="row text-center">
+      <div class="col-md-4">
+        <p>Sales &amp; Support</p>
+        <a href="#">sales@drpharm-usa.com</a>
       </div>
-    </footer>
+      <div class="col-md-4">
+        <h4>Dr Pharm USA<br>1605 E. 69th Ave<br>Denver, CO &#183; USA 80229</h4>
+      </div>
+      <div class="col-md-4">
+        <p>Parts &amp; Services</p>
+        <a href="#">parts@drpharm-usa.com</a>
+      </div>
+    </div>
+    <div id="bottom-footer" class="row text-center">
+      <div class="col-md-4">
+        <h6>&#169; Dr Pharm USA. All Rights Reserved </h6>
+      </div>
+      <div class="col-md-4">
+        <a href="#">Contact Us &#183; </a>
+        <a href="#">Resources &#183; </a>
+        <a href="#">Privacy &#183; </a>
+        <a href="#">Terms &#183; </a>
+        <a href="#">Financing</a>
+      </div>
+      <div class="col-md-4">
+      </div>
+    </div>
+  </div>
+</footer>
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- RUNNING ON LOCAL BOX (NO INTRANETS)
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  -->
+         <script>
+          $(document).ready(function(){
+          $('.video').magnificPopup({
+                    type: 'iframe',
+                    iframe: {
+                      patterns: {
+                        youtube: {
+                          /*
+                          index: 'http://wwww.youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+                          
+                          id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                          // Or null - full URL will be returned
+                          // Or a function that should return %id%, for example:
+                          // id: function(url) { return 'parsed id'; } 
+
+                          src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe. 
+                          */
+                        },
+                        
+                        srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+                      
+                      }
+                    }
+
+
+                  });
+               });
+          </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="../../../js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../../../js/bootstrap.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
   </body>
 </html>
