@@ -278,6 +278,11 @@ th {
   font-family: 'Oswald';
   src: url('../fonts/Oswald-Regular.ttf');
 }
+@font-face{
+  font-family: 'Rajdhani';
+  src: url('../fonts/Rajdhani-SemiBold.ttf');
+}
+
 .glyphicon {
   position: relative;
   top: 1px;
