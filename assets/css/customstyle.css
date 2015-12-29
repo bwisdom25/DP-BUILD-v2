@@ -377,4 +377,19 @@ background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,
 	vertical-align: middle;
 	margin: 0;
 }
+.rfq_form {
+	width: 75%;
+	margin: auto;
+}
+.form-border {
+	border-color:rgb(204,204,204);
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	background-color: rgb(204,204,204);
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 ;
