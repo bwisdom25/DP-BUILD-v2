@@ -18,9 +18,9 @@ if(isset($_POST['email']))
         $msg= "EMAIL IS VALID";
 	$from_add = "bwisdom@wizbang-workspace.com"; 
 
-	$to_add = "wizbangtheory@gmail.com"; //<-- put your yahoo/gmail email address here
+	$to_add = "wizbangtheory@gmail.com,bwisdom@rightstuffequipment.com"; //<-- put your yahoo/gmail email address here
 
-	$subject = "Test Subject";
+	$subject = "[NEWSLETTER] - A New Lead has signed up for the Dr. Pharm Newsletter!";
 	$message = $_POST['email'];
 	
 	$headers = "From: $from_add \r\n";
