@@ -28,7 +28,14 @@
   <script src="assets/js/jquery-1.11.3.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>'
+    <script>
+       $(document).ready(function(){
+        $("#carousel-example-generic").carousel({
+          interval:5000
+        })
+       });
+    </script>
       <nav class="navbar navbar-default">
         <div id="nav-container" class="container">
           <div class="row">
@@ -257,6 +264,7 @@
     </div>
   </div>
 </footer>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- RUNNING ON LOCAL BOX (NO INTRANETS)

@@ -8,6 +8,7 @@
 	$title = "";
 	$address = "";
 	$city = "";
+	$zipcode = "";
 	$state = "";
 	$intrestModel = "";
 	$selectedModel = "";
@@ -28,6 +29,7 @@
 
 	
     $thank_you_url = "../../products/RFQ/successful_form.html";
+    $error_url = "../../products/RFQ/error.html";
 
 
 
@@ -35,51 +37,19 @@
 	$nameErr = $emailErr = $phoneNumberErr = $modelSelectErr = ""; 
 
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
-		if (empty($_POST["fnameInput"]) || empty($_POST["lnameInput"])) {
-			$nameErr = "Name is Required"; 
-		} else {
-			$firstName = test_input($_POST["fnameInput"]);
+
+            $firstName = test_input($_POST["fnameInput"]);
 			$lastName = test_input($_POST["lnameInput"]);
-
-			if (!preg_match("/^[a-zA-Z ]*$/",$firstName) || !preg_match("/^[a-zA-Z ]*$/",$lastName) ){
-				$nameErr = "Only Letters and White Space are Allowed.";
-			}
-		}
-
-		if (empty($_POST["emailInput"])) {
-			$emailErr = " Email Address is Required";
-		} else {
 			$email = test_input($_POST["emailInput"]);
-		}
-
-		if (empty($_POST["phonenumberInput"])) {
-			$phoneNumberErr = "Phone Number is Required";
-		} else {
 			$phoneNumber = test_input($_POST["phonenumberInput"]); 
-		} 
-
-		if (empty($_POST["modelIntrest"])) {
-			$modelSelectErr = "Atleast One Model Must Be Selected";
-		} else {
-			//Iterate through array to find all models selected
-			/*
-			$interestModel = $_POST['modelIntrest'];
-
-			$N = count($interestModel);
-
-			for ($i=0; $i < $N; $i++) { 
-				$seletedModel = $selectedModel . test_input($interestModel[$i]) . ", "; 
-			}
-			*/
-
-			$selectedModel = implode(", ", $_POST["modelIntrest"]);
-		}
 		    $companyName = test_input($_POST["compnameInput"]);
 			$title = test_input($_POST["titleInput"]);
-			$address = test_input($_POST["addressInput"]); 
+			$address = test_input($_POST["addressInput"]);
+			$zipcode = test_input($_POST["zipInput"]);
 			$city = test_input($_POST["cityInput"]);
 			$state = test_input($_POST["stateInput"]);
 			
+			$selectedModel = implode(", ", $_POST["modelIntrest"]);
 			$rateValue = test_input($_POST["rateNUMInput"]); 
 			$rateLabel = test_input($_POST["runRateInput"]);
 			$accuracy = test_input($_POST["accuracyInput"]); 
@@ -132,7 +102,8 @@
 	$message .= "Title: " . $title . "\n";
 	$message .= "Address: " . $address . "\n"; 
 	$message .= "City: " . $city . "\n"; 
-	$message .= "State: " . $state . "\n"."\n";
+	$message .= "State: " . $state . "\n";
+	$message .= "Zip Code: ". $zipcode . "\n"."\n";
 	$message .= "Models Intrested In: " . $selectedModel . "\n";
 	$message .= "Desired Output Rate: ". $rateValue . " Capsules Per " . $rateLabel . "\n";
 	$message .= "Filling Accuracy: " . $accuracy . " %\n"; 
@@ -165,7 +136,9 @@
   if(mail($to_add,$subject,$message,$headers)) 
 	{
 		header('Location: ' . $thank_you_url);
-	} 
+	} else {
+		header('Location: ' . $error_url);
+	}
 
     
 ?>
