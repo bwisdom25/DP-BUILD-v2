@@ -397,4 +397,8 @@ background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,
 	color: #a94442;
 	font-size: 0.75em;
 }
+
+.center-form {
+	margin-bottom: 25px;
+}
 ;

@@ -14,12 +14,18 @@
 	$rateValue = "";
 	$rateLabel = "";
 	$accuracy = ""; 
-	$prePrintBool = ""; 
+	$hardness = "";
+	$tabletShape = "";
+	$tabletLayer = "";
+	$tabletLength = "";
+	$tabletWidth = "";
+	$tabletThickness = ""; 
 	$primaryToolSize = "";
+	$toolType = "";
+	$headType = "";
 	$dosingdiskThick = "";
 	$additToolBool = "";
-	$capPolishBool = "";
-	$vacPumpBool = "";
+	$tabDustBool = "";
 	$dustColBool = "";
 	$vacLoadBool = ""; 
 	$productDesc = ""; 
@@ -44,20 +50,30 @@
 		    $companyName = test_input($_POST["compnameInput"]);
 			$title = test_input($_POST["titleInput"]);
 			$address = test_input($_POST["addressInput"]);
-			$zipcode = test_input($_POST["zipInput"]);
 			$city = test_input($_POST["cityInput"]);
 			$state = test_input($_POST["stateInput"]);
+			$zipcode = test_input($_POST["zipInput"]);
 			
 			$selectedModel = implode(", ", $_POST["modelIntrest"]);
+
 			$rateValue = test_input($_POST["rateNUMInput"]); 
 			$rateLabel = test_input($_POST["runRateInput"]);
-			$accuracy = test_input($_POST["accuracyInput"]); 
-			$prePrintBool = test_input($_POST["prePrintCapsInput"]); 
-			$primaryToolSize = test_input($_POST["primToolSizeInput"]);
-			$dosingdiskThick = test_input($_POST["ddthickInput"]);
+			$accuracy = test_input($_POST["accuracyInput"]);
+			$hardness = test_input($_POST["hardnessInput"]);
+
+			$tabletShape = test_input($_POST["tabletshapeInput"]); 
+			$tabletLayer = test_input($_POST["tabletlayerInput"]);
+
+			$tabletLength = test_input($_POST["tabletlengthInput"]);
+			$tabletWidth = test_input($_POST["tabletwidthInput"]);
+			$tabletThickness = test_input($_POST["tabletthickInput"]);
+
+			$primaryToolSize = test_input($_POST["primtoolSizeInput"]);
+			$toolType = test_input($_POST["tooltypeInput"]);
+			$headType = test_input($_POST["punchHeadInput"]);
+
 			$additToolBool = test_input($_POST["toolInput"]); 
-			$capPolishBool = test_input($_POST["capPolishInput"]);
-			$vacPumpBool = test_input($_POST["vacPumpInput"]);
+			$tabDustBool = test_input($_POST["tabletdedustInput"]);
 			$dustColBool = test_input($_POST["dustColInput"]);
 			$vacLoadBool = test_input($_POST["vacLoadInput"]); 
 			$productDesc = test_input($_POST["productDescInput"]);  
@@ -104,14 +120,17 @@
 	$message .= "State: " . $state . "\n";
 	$message .= "Zip Code: ". $zipcode . "\n"."\n";
 	$message .= "Models Intrested In: " . $selectedModel . "\n";
-	$message .= "Desired Output Rate: ". $rateValue . " Capsules Per " . $rateLabel . "\n";
-	$message .= "Filling Accuracy: " . $accuracy . " %\n"; 
-	$message .= "Using Pre-Printed Capsules: " . $prePrintBool . "\n";
+	$message .= "Desired Output Rate: ". $rateValue . " Tablets Per " . $rateLabel . "\n";
+	$message .= "Weight Accuracy: " . $accuracy . " %\n"; 
+	$message .= "Hardness: " . $hardness . " kp \n";
+	$message .= "Tablet Shape: " . $tabletShape . "\n";
+	$message .= "Tablet Layers: " . $tabletLayer . "\n";
+	$message .= "Tablet Dimensions (L x W x T): " . $tabletLength . " x " . $tabletWidth . " x " . $tabletThickness . " mm \n";
 	$message .= "Primary Tooling Size: " . $primaryToolSize . "\n";
-	$message .=  "Primary Dosing Disk Thickness: " . $dosingdiskThick . " mm \n";
+	$message .= "Tooling Type: " . $toolType . "\n";
+	$message .= "Punch Head Type: " . $headType . "\n";
 	$message .= "Additional Tooling Required: " . $additToolBool . "\n";
-	$message .= "Capsule Polisher Needed: " . $capPolishBool . "\n"; 
-	$message .= "Vacuum Pump Needed: " . $vacPumpBool . "\n";
+	$message .= "Tablet Deduster Needed: " . $tabDustBool . "\n"; 
 	$message .= "Dust Collector Needed: " . $dustColBool . "\n";
 	$message .= "Vacuum Loader Needed: " . $vacLoadBool . "\n";
 	$message .= "Product Detail: " . $productDesc . "\n";
@@ -122,7 +141,7 @@
 
 	$to_add = "wizbangtheory@gmail.com,bwisdom@rightstuffequipment.com"; //<-- put your yahoo/gmail email address here
 
-	$subject = "[RFQ][Capsule Filler] - A New Lead has Filled Out an RFQ";
+	$subject = "[RFQ][Tablet Press] - A New Lead has Filled Out an RFQ";
 	
 	$headers = "From: $from_add \r\n";
 	$headers .= "Reply-To: $from_add \r\n";
@@ -135,9 +154,9 @@
 	} else {
 		     //Open txt file for testing purposes 
 		$leadFile = fopen("../newLead2.txt", "w") or die("Unable to open file!");
-   		fwrite($leadFile, $message);
+    	fwrite($leadFile, $message);
     	fclose($leadFile);
 	}
-	header('Location: ' . $thank_you_url);
+		header('Location: ' . $thank_you_url);
     
 ?>
