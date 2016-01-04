@@ -402,6 +402,93 @@ background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,
 	margin-bottom: 25px;
 }
 
+.bio-1-1{
+	background-color: rgb(0,91,191);
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.bio-1-1 h4,h3 {
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.bio-1-1 a {
+	color: white;
+}
+.bio-1-1 a:hover {
+	color: rgb(204,45,48);
+}
+
+.bio-1-2{
+	background-color: rgb(204,45,48);
+	color:white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.bio-1-2 h4,h3 {
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.bio-1-2 a {
+	color:white;
+} 
+.bio-1-2 a:hover {
+	color:rgb(0,91,191);
+}
+
+.bio-2-1 {
+	background-color: rgb(204,45,48);
+	color:white;
+	padding-top: 5px;
+	padding-bottom:5px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+
+}
+
+.bio-2-1 p{
+	font-size: 0.8em;
+	margin-bottom: 1px;
+}
+.bio-2-1 a{
+	color: white;
+	font-size: 0.75em;
+	margin-top: 1px;
+}
+.bio-2-1 a:hover{
+	color: rgb(0,91,191);
+}
+
+.bio-2-2 {
+	background-color: rgb(0,91,191);
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.bio-2-2 p{
+	font-size: 0.8em;
+	margin-bottom: 1px;
+}
+.bio-2-2 a{
+	color: white;
+	font-size: 0.75em;
+	margin-top: 1px;
+}
+.bio-2-2 a:hover{
+	color: rgb(204,45,48);
+}
+
 .event-descrip{
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -411,5 +498,6 @@ background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,
 	margin-top: 50px; 
 	display: flex;
 	align-items: center;
-}
+	}
+
 ;
