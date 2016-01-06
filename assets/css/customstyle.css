@@ -377,6 +377,11 @@ background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,
 	vertical-align: middle;
 	margin: 0;
 }
+
+.contact_form {
+	width: 50%;
+	margin: auto;
+}
 .rfq_form {
 	width: 75%;
 	margin: auto;

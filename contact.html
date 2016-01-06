@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <title>Dr. Pharm USA - Technical Resources</title>
-    <meta name="description" content="Explination of the technical resources provided by Right Stuff Equipment supporting Dr. Pharm equipment.">
+    <title>Dr. Pharm USA - Contact</title>
+    <meta name="description" content="Online Contact Form ">
     <link rel="canonical" href="http://www.drpharm-usa.com">
     <link rel="canonical" href="http://www.drpharm-usa.com/about.html">
     <!-- Bootstrap -->
@@ -29,6 +29,7 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="assets/js/bootstrap.js"></script>
   <script src="assets/js/jquery.magnific-popup.js"></script>
+  <script src="assets/js/jquery.validate.js"></script>
 
   <nav class="navbar navbar-default">
     <div id="nav-container" class="container">
@@ -98,7 +99,7 @@
           </li>
           <li><a href="#">Parts &amp; Services</a></li>
           <li><a href="#">Technical Resources</a></li>
-          <!--<li><a href="#">Blog</a></li>-->
+          <li><a href="#">Blog</a></li>
           <li><a href="#">Events</a></li>
           <li id="last-child"><a href="#">Contact</a></li>
         </ul>
@@ -108,42 +109,80 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-xs-12"> 
-        <h1>Parts &amp; Services</h1>
+        <h1>Contact Us</h1>
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-12 col-xs-12">
-        <h2 class="text-center">For Parts and or Service Requests please call <strong style="font-size:1.25em;"> 1-866-778-7826 </strong></h2>
+    <form id="contactForm" action="assets/php/contact_engine.php" method="POST" >
+      <div class="row">
+        <div class="form-border contact_form col-lg-8 col-sm-8 col-xs-12">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group ">
+                <label for="fnameInput" class="control-label">First Name</label>
+                <input type="text" class="form-control" id="fnameInput" name="fnameInput">
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="lnameInput" class="control-label">Last Name</label>
+                <input type="text" class="form-control" id="lnameInput" name="lnameInput"> 
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="companyInput" class="control-label">Company</label>
+                <input type="text" class="form-control" id="companyInput" name="compnameInput">
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="emailInput" class="control-label">Email</label> 
+                <input type="email" class="form-control" id="emailInput" name="emailInput">
+              </div>
+            </div>
+          </div>
+          <div class"row">
+            <div class="col-xs-6">
+              <div class="form-group">
+                <label for="phonenumberInput" class="control-label">Telephone</label> 
+                <input type="tel" class="form-control" id="phonenumberInput" name="phonenumberInput">
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <label>Message Regarding:</label>
+              <select class="form-control" name="reasonInput">
+                <option value="General">General</option>
+                <option value="Parts and Service">Parts and Service</option>
+                <option value="Equipment">Equipment</option>
+                <option value="Events">Events</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        </div>
+      <div class="row">
+        <div class="form-border contact_form col-lg-8 col-sm-8 col-xs-12">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label class="control-label">Message</label> 
+                <textarea class="form-control" rows="10" name="messageInput"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div> 
-    <div class="row">
-      <div class="col-lg-12 col-xs-12">
-        <h2 style="font-size: 2.5em;">Parts</h2> 
-        <p class="text-left" style="font-size: 1.2em;">All replacement parts for Dr. Pharm Equipment in the United States are provided through Right Stuff Equipment. Being centrally located in Denver, Colorado, parts are able to go out in a quick and timely manner.</p>
-      </div>
-    </div>
 
     <div class="row">
-      <!--Put Pictures Here-->
-    </div>
-    <div class="row">
-      <div class="col-lg-12 col-xs-12">
-        <h2 style="font-size: 2.5em;">Technical Service</h2> 
-        <p class="text-left" style="font-size: 1.2em;">Right Stuff Engineers are factory trained on all Dr. Pharm equipment and ready to provide you with immediate technical answers to all Dr. Pharm equipment. Beyond being well versed in the techncial aspects of the machines, Right Stuff Engineers also strive to understand powder properties and solid dose processes to further provide you with a complete solution. Through attending industy seminars and training sessions, our Engineers are eager to pass their knowldege on to you!</p> 
+      <div class="col-lg-3 col-sm-6 col-xs-12" style="padding-left:0;">
+        <input type="submit" class="btn btn-primary btn-lg" style="width:75%;" value="Submit">
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-6 col-xs-12" style="text-align:center;">
-        <img style="width:100%" src="assets/images/marketing/training_drpharm_brent.jpg" alt="Right Stuff Engineers in deep discussion during a Dr. Pharm Training session">
-      </div>
-      <div class="col-lg-6 col-xs-12" style="text-align:center;">
-        <img style="width:100%;" src="assets/images/marketing/training_rse_brent1.jpg" alt="Right Stuff Engineer explaining concepts on the GZP-26 Tablet Press">
-      </div>
-    </div>
+   </form>
   </div>
-
-
-
 
   <footer class="footer">
     <div id="footer-container" class="container">
@@ -176,38 +215,42 @@
       </div>
     </div>
   </footer>
-
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <!-- RUNNING ON LOCAL BOX (NO INTRANETS)
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
--->
 <script>
-  $('.video').magnificPopup({
-            type: 'iframe',
-            iframe: {
-              patterns: {
-                youtube: {
-                  /*
-                  index: 'http://wwww.youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
-                  
-                  id: 'v=', // String that splits URL in a two parts, second part should be %id%
-                  // Or null - full URL will be returned
-                  // Or a function that should return %id%, for example:
-                  // id: function(url) { return 'parsed id'; } 
+$(document).ready(function () {
 
-                  src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe. 
-                  */
-                },
-                
-                srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
-              
-              }
+    $('#contactForm').validate({
+        rules: {
+            fnameInput: {
+                minlength: 1,
+                required: true
+            },
+            lnameInput: {
+                minlength: 2,
+                required: true
+            },
+            emailInput: {
+                required: true,
+                email: true
+            },
+            compnameInput: {
+                required: true
+            },
+            phonenumberInput: {
+                required: true,
+                minlength: 10,
+                digits: true
+            },
+            messageInput: {
+                required: true
             }
+        },
+        highlight: function (element) {
+            $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+        },
+    
+    });
 
-
-          });
-       
+});
 </script>
 </body>
 </html>
