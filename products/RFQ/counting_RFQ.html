@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dr. Pharm USA - Tablet Press RFQ</title>
+    <title>Dr. Pharm USA - Counting Line Equipment RFQ</title>
 
-    <meta name="description" content="Online Request for Quote Form for Dr. Pharm Tablet Presses">
+    <meta name="description" content="Online Request for Quote Form for Dr. Pharm Counting Line Equipment">
 
     <!-- Bootstrap -->
     <link href="../../assets/css/bootstrap.css" rel="stylesheet">
@@ -101,11 +101,11 @@
   <div class="container">
     <div class="row">
       <div class="rfq_form col-lg-12 col-sm-12 col-xs-12">
-        <h1>Request for Quote</h1>
-        <h2>Tablet Presses</h2>
+        <h1>Request for Quote - Counting Line</h1>
+        <h2>Please Fill Out the Form Below For A Quote on Counting Line Equipment</h2>
       </div>
     </div> 
-    <form id="rfqForm" action="../../assets/php/tablet_rfq_engine.php" method="POST" >
+    <form id="rfqForm" action="../../assets/php/counting_rfq_engine.php" method="POST" >
       <div class="row">
         <div class="form-border rfq_form col-lg-12 col-sm-12 col-xs-12">
           <div class="row">
@@ -178,28 +178,50 @@
           </div>
         </div>
       </div>
-      
       <div class="row">
         <div class="form-border rfq_form col-lg-12 col-sm-12 col-xs-12">
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="form-group center-form">
-                <label>Model(s) Interested in: </label><br>
-                <label class="checkbox-inline"><input type="checkbox" name="modelIntrest[]" value="GZP-265">GZP-265</label>
-                <label class="checkbox-inline"><input type="checkbox" name="modelIntrest[]" value="ZPT-265">ZPT-265</label>
-                <label class="checkbox-inline"><input type="checkbox" name="modelIntrest[]" value="GZP-370">GZP-370</label>
-                <label class="checkbox-inline"><input type="checkbox" name="modelIntrest[]" value="ZPT-370">ZPT-370</label>
-                <label class="checkbox-inline"><input type="checkbox" name="modelIntrest[]" value="GZPS-720">GZPS-720</label>
-                <label class="checkbox-inline"><input type="checkbox" name="modelIntrest[]" value="GZPD-560">GZPD-560</label>
-                <label class="checkbox-inline"><input type="checkbox" name="modelIntrest[]" value="GZPT-1060">GZPT-1060</label>
+          <div class="row text-center">
+            <div class="col-lg-12 col-xs-12">
+              <div class="form group form-inline center-form">
+              <label>Intreset: </label>
+              <select class="form-control" style="width:50%;" name="reasonInput">
+                <option value="Counter - Model Specific">Counter - Model Specific</option>
+                <option value="Unscrambler - Model Specific">Unscrambler - Model Specific</option>
+                <option value="Full Counting Line Solution">Full Counting Line Solution</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Model(s) Interested in: </label><br>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="form-group form-inline">
+                  <label>Unscramblers: </label>
+                  <label class="checkbox-inline"><input type="checkbox" name="unscramInterest[]" value="PLP-700">PLP-700</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="unscramInterest[]" value="RSE-UT48">RSE-UT48</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="unscramInterest[]" value="LP-700A">LP-700A</label>
+                  <label class="checkbox-inline"><input type="checkbox" name="unscramInterest[]" value="GLP-800S">GLP-800S</label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                  <div class="form-group form-inline">
+                    <label>Counters: </label>
+                    <label class="checkbox-inline"><input type="checkbox" name="counterInterest[]" value="CZG100-16A">CZG100-16A</label>
+                    <label class="checkbox-inline"><input type="checkbox" name="counterInterest[]" value="CZG100-32A">CZG100-32A</label>
+                  </div>
               </div>
             </div>
           </div>
+        </div>
           <div class="row">
             <div class="col-xs-6">
-              <label>Output Rate:</label>
+              <label>Run Rate:</label>
               <div class="form-group form-inline center-form">
-                <input type="number" class="form-control" id="rateNUMInput" name="rateNUMInput"><label style="margin-left:5px;margin-right:5px;">Tablets Per </label>
+                <input type="number" class="form-control" id="rateNUMInput" name="rateNUMInput"><label style="margin-left:5px;margin-right:5px;">Bottles Per </label>
                 <select class="form-control" name="runRateInput">
                   <option value="minute">Minute</option>
                   <option value="hour">Hour</option>
@@ -209,19 +231,12 @@
                 </select>
               </div>
             </div>
-            <div class="col-xs-3">
-              <label>Weight Accuracy:</label> 
-              <div class="form-group form-inline center-form">
-                <label style="font-size: 1.5em;">&plusmn;</label>
-                <input type="number" class="form-control" style="width:75%" id="accuracyInput" name="accuracyInput" min="0" max="100">
-                <label>&#37;</label>
-              </div>
-            </div>
-            <div class="col-xs-3">
-              <label>Hardness:</label> 
-              <div class="form-group form-inline center-form">
-                <input type="number" class="form-control" style="width:75%" id="hardnessInput" name="hardnessInput" min="0" max="100">
-                <label>kp</label>
+            <div class="col-xs-6">
+              <label>Products:</label>
+              <div class="form-group center-form">
+                <label class="checkbox-inline"><input type="checkbox" name="productInput[]" value="Tablets">Tablets</label>
+                <label class="checkbox-inline"><input type="checkbox" name="productInput[]" value="Capsules">Capsules</label>
+                <label class="checkbox-inline"><input type="checkbox" name="productInput[]" value="Other">Other</label>
               </div>
             </div>
         </div>
@@ -244,114 +259,47 @@
             </div>
           </div>
           <div class="col-xs-6">
-            <label>Tablet Layers: </label>
-            <div class="form-group center-form">
-              <label class="radio-inline">
-                <input type="radio" name="tabletlayerInput" value="Single-Layer">Single-Layer
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="tabletlayerInput" value="Double-Layer">Double-Layer
-              </label>
-               <label class="radio-inline">
-                <input type="radio" name="tabletlayerInput" value="Triple-Layer">Triple-Layer
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-2">
-          </div>
-          <div class="col-xs-7">
+            <label>Tablet Dimensions (mm): </label>
             <div class="form-group form-inline center-form">
-              <label>Tablet Dimensions (mm): </label>
-              <input type="number" class="form-control" style="width:15%;" name="tabletlengthInput">
+              <input type="number" class="form-control" style="width:20%;" name="tabletlengthInput">
               <label>L</label>
-              <input type="number" class="form-control" style="width:15%;"name="tabletwidthInput">
+              <input type="number" class="form-control" style="width:20%;"name="tabletwidthInput">
               <label>W</label>
-              <input type="number" class="form-control" style="width:15%;" name="tabletthickInput">
+              <input type="number" class="form-control" style="width:20%;" name="tabletthickInput">
               <label>T</label>
             </div>
           </div> 
         </div>
         <div class="row">
-          <div class="col-xs-4">
-            <div class="form group form-inline center-form">
-              <label>Primary Tooling Size: </label>
-              <select class="form-control" style="width:50%;" name="primtoolSizeInput">
-                <option value="00">D</option>
-                <option value="0">B</option>
-                <option value="1">BB</option>
-                <option value="2">BBS</option>
-                <option value="3">HLS14</option>
-              </select>
-            </div>
-          </div> 
-          <div class="col-xs-3">
+          <div class="col-xs-12">
             <div class="form-group form-inline center-form">
-              <label style="margin-right:10px;">Tooling Type: </label>
-              <label class="radio-inline">
-                <input type="radio" name="tooltypeInput" value="TSM">TSM
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="tooltypeInput" value="EU">EU
-              </label>
-            </div>
-          </div>
-          <div class="col-xs-5">
-            <div class="form-group form-inline center-form">
-              <label style="margin-right:5px;">Punch Head Type: </label>
-              <label class="radio-inline">
-                <input type="radio" name="punchHeadInput" value="Standard">Standard
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="punchHeadInput" value="Domed">Domed
-              </label>
+              <label>Capsule Sizes: </label>
+              <label class="checkbox-inline" style="margin-left:10px;"><input type="checkbox" name="capsizeInput[]" value="00">00</label>
+              <label class="checkbox-inline"><input type="checkbox" name="capsizeInput[]" value="0">0</label>
+              <label class="checkbox-inline"><input type="checkbox" name="capsizeInput[]" value="1">1</label>
+              <label class="checkbox-inline"><input type="checkbox" name="capsizeInput[]" value="2">2</label>
+              <label class="checkbox-inline"><input type="checkbox" name="capsizeInput[]" value="3">3</label>
+              <label class="checkbox-inline"><input type="checkbox" name="capsizeInput[]" value="4">4</label>
+              <label class="checkbox-inline"><input type="checkbox" name="capsizeInput[]" value="5">5</label>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-3">
-            <label>Additional Tooling Required: </label>
-            <div class="form-group">
-              <label class="radio-inline">
-                <input type="radio" name="toolInput" value="Yes">Yes
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="toolInput" value="No">No
-              </label>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <label>Tablet Deduster Needed: </label>
-            <div class="form-group">
-              <label class="radio-inline">
-                <input type="radio" name="tabletdedustInput" value="Yes">Yes
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="tabletdedustInput" value="No">No
-              </label>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <label>Dust Collector Needed: </label>
-            <div class="form-group">
-              <label class="radio-inline">
-                <input type="radio" name="dustColInput" value="Yes">Yes
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="dustColInput" value="No">No
-              </label>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <label>Vacuum Loader Needed: </label>
-            <div class="form-group">
-              <label class="radio-inline">
-                <input type="radio" name="vacLoadInput" id="yesVacLoad" value="Yes">Yes
-              </label>
-              <label class="radio-inline">
-                <input type="radio" name="vacLoadInput" id="noVacLoad" value="No">No
-              </label>
+          <div class="col-lg-12 col-xs-12">
+            <label>Room Dimensions: </label>
+            <div class="form-group form-inline center-form">
+              <input type="number" class="form-control" style="width:20%;" name="roomlengthInput">
+              <label>L</label>
+              <input type="number" class="form-control" style="width:20%;"name="roomwidthInput">
+              <label>W</label>
+              <input type="number" class="form-control" style="width:20%;" name="roommheightInput">
+              <label>H</label>
+              <select class="form-control" name="roomdunitInput">
+                <option value="Feet">Feet</option>
+                <option value="Inches">Inches</option>
+                <option value="Meters">Meters</option>
+                <option value="Millimeters">Millimeters</option>
+              </select>
             </div>
           </div>
         </div>
@@ -361,11 +309,11 @@
     <div class="row">
       <div class="form-border rfq_form col-lg-12 col-sm-12 col-xs-12">
         <div class="row">
-          <span id="helpBlock" class="help-block">For us to better understand your application and provide you with the best solution please describe your product that you will be tableting. Please provide as much detail as you can. (i.e. Product Density, Any Processing Methods, Desired Weights, Excipients, etc.) </span>
+          <span id="helpBlock" class="help-block">For us to better understand your application and provide you with the best solution please describe your current operation and your overall goal you want to achieve. Please provide as much detail as you can. (i.e. Product, Bottle Sizes, Cap Sizes, Sleeving, etc.) </span>
           <div class="col-xs-12">
             <div class="form-group">
-              <label>Product Description</label> 
-              <textarea class="form-control" rows="5" name="productDescInput"></textarea>
+              <label>Description</label> 
+              <textarea class="form-control" rows="5" name="descriptionInput"></textarea>
             </div>
           </div>
         </div>
