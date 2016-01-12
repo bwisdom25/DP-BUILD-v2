@@ -407,6 +407,16 @@ background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,
 	margin-bottom: 25px;
 }
 
+.bio-row-1{
+	display: flex;
+	align-items:center;
+	margin-bottom: 2em;
+}
+.bio-row-2{
+	display: flex;
+	align-items:center;
+	margin-bottom: 0.5em;
+}
 .bio-1-1{
 	background-color: rgb(204,204,204);
     color: black;
@@ -428,26 +438,6 @@ background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,
 	color: rgb(204,45,48);
 }
 
-.bio-1-2{
-	background-color: rgb(204,204,204);
-	color: black;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-}
-
-.bio-1-2 h4,h3 {
-	margin-top: 6px;
-	margin-bottom: 6px;
-}
-
-.bio-1-2 a {
-	color: rgb(0,91,191);
-} 
-.bio-1-2 a:hover {
-	color: rgb(204,45,48);
-}
 
 .bio-2-1 {
 	background-color: rgb(204,204,204);
