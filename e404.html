@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  <title>Dr. Pharm USA | Contact</title>
-  <meta name="description" content="Dr. Pharm USA can be contacted online, or by phone at 1-866-778-7826 for all supplement and pharmaceutical equipment needs">
-
-  <link rel="canonical" href="http://dev.drpharm-usa.com/contact">
-  <link rel="canonical" href="http://dev.drpharm-usa.com/contact.html">
+  <title>Dr. Pharm USA | Events</title>
+  <meta name="description" content="Dr. Pharm USA exhibits dietary supplement, natural products, and pharmaceutical trade shows every year. Come by and see us!">
+  <link rel="canonical" href="http://dev.drpharm-usa.com/events/">
+  <link rel="canonical" href="http://dev.drpharm-usa.com/events">
+  <link rel="canonical" href="http://dev.drpharm-usa.com/events.html">
   <!-- Bootstrap -->
   <link href="http://dev.drpharm-usa.com/assets/css/bootstrap.css" rel="stylesheet">
   <link href="http://dev.drpharm-usa.com/assets/css/customstyle.css" rel="stylesheet">
@@ -32,16 +32,19 @@
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="http://dev.drpharm-usa.com/assets/js/bootstrap.js"></script>
       <script src="http://dev.drpharm-usa.com/assets/js/jquery.magnific-popup.js"></script>
-      <script src="http://dev.drpharm-usa.com/assets/js/jquery.validate.js"></script>
-
+      <script>
+      $(document).ready(function(){
+        $("#carousel-example-generic").carousel({
+          interval:5000
+        })
+      });
+      </script>
       <nav class="navbar navbar-default">
         <div id="nav-container" class="container">
           <div class="row">
             <div id="left_title"class="col-md-4">
               <div class="navheader-logoleft">
-
                 <img src="http://dev.drpharm-usa.com/assets/images/logos/logo_rightstuff.png" alt="Right Stuff Equipment Logo" width="150" height="181">
-                
               </div>
               <div class="navheader-titleleft">
                 <p>Engineering, Integration, Manufacturing, and Exclusive provider of Dr. Pharm Equipment in the USA</p>
@@ -77,16 +80,14 @@
           <h4>Beijing</h4>
         </div>
         <div class="navheader-logoright">
-
           <img class="logo-img" src="http://dev.drpharm-usa.com/assets/images/logos/logo_dr_pharm_new_outline.png" alt="Dr Pharm Logo" width="167"  height="181">
-          
         </div>
       </div>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li><a href="http://dev.drpharm-usa.com">Home</a></li>
-        <li><a href="http://dev.drpharm-usa.com/about.html">About</a></li>
+        <li><a href="http://www.drpharm-usa.com">Home</a></li>
+        <li><a href="http://dev.drpharm-usa.com/about">About</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Equipment<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -103,90 +104,27 @@
         <li><a href="http://dev.drpharm-usa.com/parts_services">Parts &amp; Services</a></li>
         <li><a href="http://dev.drpharm-usa.com/tech_resources">Technical Resources</a></li>
         <!-- <li><a href="#">Blog</a></li> -->
-        <li><a href="events.html">Events</a></li>
-        <li id="last-child" class="active"><a href="http://dev.drpharm-usa.com/contact">Contact</a></li>
+        <li class="active"><a href="http://dev.drpharm-usa.com/events">Events</a></li>
+        <li id="last-child"><a href="http://dev.drpharm-usa.com/contact">Contact</a></li>
       </ul>
     </div>
   </div><!--end container-->
 </nav> 
 <div class="container">
   <div class="row">
-    <div class="col-lg-12 col-xs-12"> 
-      <h1>Contact Us</h1>
+    <div class="col-lg-12 col-xs-12">
+      <h1>404 - Page Not Found</h1>
     </div>
   </div>
-  <form id="contactForm" action="assets/php/contact_engine.php" method="POST" >
-    <div class="row">
-      <div class="form-border contact_form col-lg-8 col-sm-8 col-xs-12">
-        <div class="row">
-          <div class="col-xs-6">
-            <div class="form-group ">
-              <label for="fnameInput" class="control-label">First Name</label>
-              <input type="text" class="form-control" id="fnameInput" name="fnameInput">
-            </div>
-          </div>
-          <div class="col-xs-6">
-            <div class="form-group">
-              <label for="lnameInput" class="control-label">Last Name</label>
-              <input type="text" class="form-control" id="lnameInput" name="lnameInput"> 
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-6">
-            <div class="form-group">
-              <label for="companyInput" class="control-label">Company</label>
-              <input type="text" class="form-control" id="companyInput" name="compnameInput">
-            </div>
-          </div>
-          <div class="col-xs-6">
-            <div class="form-group">
-              <label for="emailInput" class="control-label">Email</label> 
-              <input type="email" class="form-control" id="emailInput" name="emailInput">
-            </div>
-          </div>
-        </div>
-        <div class"row">
-          <div class="col-xs-6">
-            <div class="form-group">
-              <label for="phonenumberInput" class="control-label">Telephone</label> 
-              <input type="tel" class="form-control" id="phonenumberInput" name="phonenumberInput">
-            </div>
-          </div>
-          <div class="col-xs-6">
-            <label>Message Regarding:</label>
-            <select class="form-control" name="reasonInput">
-              <option value="General">General</option>
-              <option value="Parts and Service">Parts and Service</option>
-              <option value="Equipment">Equipment</option>
-              <option value="Financing">Financing</option>
-              <option value="Events">Events</option>
-            </select>
-          </div>
-        </div>
-      </div>
+  <div class="row" style="margin-top:20px">
+    <div class="col-lg-12 col-xs-12">
+      <h2>The page you were directed to is not found. We apologize for the inconvenience</h2>
     </div>
-    <div class="row">
-      <div class="form-border contact_form col-lg-8 col-sm-8 col-xs-12">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="form-group">
-              <label class="control-label">Message</label> 
-              <textarea class="form-control" rows="10" name="messageInput"></textarea>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-3 col-sm-6 col-xs-12" style="padding-left:0;">
-        <input type="submit" class="btn btn-primary btn-lg" style="width:75%;" value="Submit">
-      </div>
-    </div>
-  </form>
+  </div>
+  
 </div>
+
+
 
 <footer class="footer">
   <div id="footer-container" class="container">
@@ -211,7 +149,7 @@
         <a href="http://dev.drpharm-usa.com/contact">Contact Us &#183; </a>
         <a href="http://dev.drpharm-usa.com/tech_resources">Resources &#183; </a>
         <a href="http://dev.drpharm-usa.com/privacy">Privacy &#183; </a>
-        <a target="_blank" href="http://dev.drpharm-usa.com/assets/downloads/terms.pdf">Terms &#183; </a>
+        <a target="_blank"href="http://dev.drpharm-usa.com/assets/downloads/terms">Terms &#183; </a>
         <a href="http://dev.drpharm-usa.com/financing">Financing</a>
       </div>
       <div class="col-md-4">
@@ -219,42 +157,38 @@
     </div>
   </div>
 </footer>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- RUNNING ON LOCAL BOX (NO INTRANETS)
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+-->
 <script>
-$(document).ready(function () {
+$('.video').magnificPopup({
+  type: 'iframe',
+  iframe: {
+    patterns: {
+      youtube: {
+                  /*
+                  index: 'http://wwww.youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+                  
+                  id: 'v=', // String that splits URL in a two parts, second part should be %id%
+                  // Or null - full URL will be returned
+                  // Or a function that should return %id%, for example:
+                  // id: function(url) { return 'parsed id'; } 
 
-  $('#contactForm').validate({
-    rules: {
-      fnameInput: {
-        minlength: 1,
-        required: true
-      },
-      lnameInput: {
-        minlength: 2,
-        required: true
-      },
-      emailInput: {
-        required: true,
-        email: true
-      },
-      compnameInput: {
-        required: true
-      },
-      phonenumberInput: {
-        required: true,
-        minlength: 10,
-        digits: true
-      },
-      messageInput: {
-        required: true
-      }
-    },
-    highlight: function (element) {
-      $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
-    },
-    
-  });
+                  src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe. 
+                  */
+                },
+                
+                srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+                
+              }
+            }
 
-});
+
+          });
+
 </script>
 </body>
 </html>
