@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -30,6 +31,7 @@
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="http://dev.drpharm-usa.com/assets/js/bootstrap.js"></script>
       <script src="http://dev.drpharm-usa.com/assets/js/jquery.magnific-popup.js"></script>
+      <script src="http://dev.drpharm-usa.com/assets/js/jquery.validate.js"></script>
       <script>
       $(document).ready(function(){
         $("#carousel-example-generic").carousel({
@@ -158,25 +160,24 @@
 </div>
 
 <div class= "container">
-
   <div class="row">
     <div class="col-md-4">
       <h2 style="text-align: center;">Automatic Capsule Fillers</h2>
-      <a href="http://dev.drpharm-usa.com/products/capsule_fillers/cfm_3500">
+      <a href="http://dev.drpharm-usa.com/products/capsule_fillers">
         <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 3500/capsule_CFM3500_front.jpg" alt="CFM 3500 Automatic Capsule Filler" width="325">
       </a>
       <p>With some of the highest output models in the world, Dr Pharm is a global leader in providing quality automatic capsule filling equipment. The tamping style capsule filler provides high filling accuracy at an affordable cost and high output volume.</p>
     </div>
     <div class="col-md-4">
       <h2 style="text-align: center;">Tablet Press Equipment</h2>
-      <a href="http://dev.drpharm-usa.com/products/tablet_presses/gzps_720">
+      <a href="http://dev.drpharm-usa.com/products/tablet_presses">
         <img src="http://dev.drpharm-usa.com/assets/images/products/tablet_press/GZP-ZPT/tablet_GZP40_front.jpg" width="300" style="display: block; margin-left: auto; margin-right: auto;" alt="GZP-40 Tablet Press">
       </a>
       <p>Dr. Pharm is proud to present the automatic tablet press equipment lines. For those who are making the next step to high speed and high output, Dr. Pharm has a model suitable for your application!</p>
     </div>
     <div class="col-md-4">
       <h2 style="text-align: center;">Counting Lines</h2>
-      <a href="http://dev.drpharm-usa.com/products/counters/czg_100_16a">
+      <a href="http://dev.drpharm-usa.com/products/counters">
         <img src="http://dev.drpharm-usa.com/assets/images/products/counter/counter_CZG10016A_front.jpg" alt="CZG100-16A Tablet and Capsule Counting Machine" width="360">
       </a>
       <p>Our advanced vibratory lane counter is capable of dispensing a set number of capsule and tablets of many sizes. Complete lines are available to fully automate your packaging process from start to finish. Introductory to high speed lines are all available. </p>
@@ -201,33 +202,37 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row" style="margin-top:20px;">
     <div class="col-md-12">
       <h3>Newsletter Sign Up</h3>
       <p>Get up to date News, Sales Notices, and Exclusive Offers!
-        <form action="assets/php/contactengine.php" method="post">
-          <div class="form-group" id="newsSignUp" style="width: 40%" >
-            <label for="email">Email Address</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Email">    
+        <form id="newsForm"action="assets/php/newsletter_engine.php" method="post">
+          <div class="row">
+            <div class="col-md-3 col-xs-12">
+              <div class="form-group form-inline" style="width:100%;">
+                <label>First Name</label>
+                <input type="text" class="form-control" name="fnameInput"> 
+              </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="form-group form-inline" style="width:100%;">
+                <label>Last Name</label>
+                <input type="text" class="form-control" name="lnameInput"> 
+              </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+              <div class="form-group form-inline" id="newsSignUp" style="width:100%">
+                <label>Email Address</label>
+                <input type="email" class="form-control" name="emailInput" style="width:60%;"placeholder="Email">    
+              </div>
+            </div>
           </div>
-          <button type="submit" name="submit" value="Submit" class="btn btn-default" >Submit</button>
+          <div class="row">
+            <button type="submit" name="submit" value="Submit" class="btn btn-default" >Submit</button>
+          </div>
         </form>
-    <!--
-    <div class="col-md-4">
-      <h2>Wet Granulators</h2>
-        <p>Dr. Pharm is proud to present the automatic tablet press equipment lines. For those who are making the next step to high speed and high output, Dr. Pharm has a model suitable for your application!</p>
     </div>
-    <div class="col-md-4">
-      <h2>Coating Systems</h2>
-        <p>With some of the most highest output models in the world, Dr Pharm is a global leader in providing quality automatic capsule filling equipment. The tamping style capsule filler provides high filling accuracy at an affordable cost.</p>
-    </div>
-    <div class="col-md-4">
-      <h2>Bins &amp; Blenders </h2> 
-        <p> Sanitary design djkfla;sfjdksalf;djskal;fdlskdkddskkskewiweinveiwoncx,md</p>
-    </div>
-  -->
-</div>
-
+  </div>
 </div>
 
 
@@ -294,6 +299,32 @@
 
                   });
 
+</script>
+<script>
+    $(document).ready(function () {
+
+      $('#newsForm').validate({
+        rules: {
+          fnameInput: {
+            minlength: 1,
+            required: true
+          },
+          lnameInput: {
+            minlength: 2,
+            required: true
+          },
+          emailInput: {
+            required: true,
+            email: true
+          },
+        },
+        highlight: function (element) {
+          $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+        },
+
+      });
+
+});
 </script>
 </body>
 </html>

@@ -68,9 +68,9 @@
 
 
     //EMAIL DATA 
-    $from_add = "bwisdom@wizbang-workspace.com"; 
+    $from_add = "webmaster@drpharm-usa.com"; 
 
-	$to_add = "wizbangtheory@gmail.com,bwisdom@rightstuffequipment.com"; //<-- put your yahoo/gmail email address here
+	$to_add = "sales@drpharm-usa.com"; //<-- put your yahoo/gmail email address here
 
 	$subject = "[Contact-Message] - A Website Visitor Has Sent a Message";
 	
