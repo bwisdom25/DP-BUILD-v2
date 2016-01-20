@@ -9,7 +9,7 @@
 	font-size: 62.5px;
 	font-family: inherit; 
 	padding: 0; 
-	margin: 10px 0px -10px 0px;
+	margin: 10px 0px 0px 0px;
 	text-shadow: -2px -2px 0px black, 
 	              2px -2px 0px black, 
 	              -2px 2px 0px black, 
@@ -26,22 +26,26 @@
 	margin: -2px 5px -2px 0; 
 	clear: right; 
 }
+
 .telefono { 
 	display: block; 
 	font-size: 35px; 
 	color: #C51A2D; 
 	font-family: inherit; 
-	padding: 20px 0; 
+	padding-top: 20px;
+	padding-bottom: 0px; 
+	margin-bottom: 66px;
 	clear: right;
 	text-shadow: -1px -1px 0px black,
 				  1px -1px 0px black,
 				  -1px 1px 0px black,
 				  1px 1px 0px black;
 }
+
 .navheader-titlecenter a { 
 	opacity: .6; 
 	display: inline-block; 
-	padding: 0 px; 
+	padding: 0px; 
 	margin: 0 5px; 
 	transition: opacity 0.2s; 
 }
@@ -127,10 +131,10 @@
 }
 .navheader-titleleft p{
 	font-size: 16px;
-	
+	display: inline-block;
 	color: white;
 	text-align: center;
-	margin: auto;
+	margin: 0px;
 	width: 200px;
 }
 .navheader-titleright h4,
@@ -148,29 +152,9 @@
 	line-height: 25px;
 	padding: 0px;
 }
-
-@media (max-width: 1280px){
-	.title{
-	text-align: center;
-	display: block; 
-	color: white; 
-	font-size: 60px; 
-	font-family: inherit; 
-	padding: 0; 
-	text-shadow: -2px -2px 0px black, 
-	              2px -2px 0px black, 
-	              -2px 2px 0px black, 
-	              2px 2px 0px black; 
-	-webkit-print-color-adjust:exact;
-    -webkit-filter:blur(0);
-	}
-
-	.navheader-titleright h2,
-	.navheader-titleleft h2{
-		font-size: 20px;
-	}
-
-
+.mobile-img {
+	width: 100%;
+	min-width: 18em;
 }
 
 #newsSignUp{
@@ -264,7 +248,14 @@
 .product_catelog{
 	display: flex;
 	align-items: center;
+	flex-wrap:wrap;
 }
+ .product_catelog img{
+ 	width: 100%; 
+ 	margin:auto;
+ 	max-width:35em;
+ 	margin-bottom: 25px;
+ }
 #product-table {
 	font-family: 'Rajdhani', sans-serif;
 	margin-bottom: 0px;
@@ -287,8 +278,11 @@
   background-color: rgb(204,45,48);
 }
 
-.tablet_press_img {
-	text-align: center;
+#tooling-size-label{
+	display:inline-block; 
+	vertical-align:middle; 
+	margin:0; 
+	font-size: 1.5em;
 }
 
 #tooling-size-tabs{
@@ -316,7 +310,7 @@
 	letter-spacing: 0.25vw;
 }
 .buynow-button{
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 	margin-top: 5px;
 	font-size: 50px;
 	border-radius: 10px;
@@ -329,9 +323,22 @@
 				  2px 2px 0px #000;
 
 }
+
+.product-row{
+	display:flex; 
+	align-items:center; 
+	flex-wrap:wrap;
+
+}
+
+.panel-title{
+	font-size: 52px;
+}
+/*
 #carousel > .carousel-inner {
 	height: 642px;
 }
+
 #carousel .carousel-inner > .item, #carousel .carousel-inner > .active {
 	position: relative;
 	top: 50%; 
@@ -348,6 +355,13 @@
     max-height: 100%;
     overflow: visible;
 }
+*/
+
+.product-carousel-img {
+	margin: auto !important;
+	width: 100% !important;
+	max-width: 540px; 
+}
 
 #carousel_control{
 	width: 5%;
@@ -355,6 +369,8 @@
 
 #video_container_3{
 	text-align: center;
+	margin-bottom: 20px;
+	max-width: 30em;
 }
 #video_container_3 > iframe {
 	width:100%; 
@@ -377,15 +393,6 @@
 	display:inline-block;
 	vertical-align: middle;
 	margin: 0;
-}
-
-.contact_form {
-	width: 50%;
-	margin: auto;
-}
-.rfq_form {
-	width: 75%;
-	margin: auto;
 }
 .form-border {
 	border-color:rgb(204,204,204);
@@ -411,12 +418,40 @@
 .bio-row-1{
 	display: flex;
 	align-items:center;
+	flex-wrap:wrap;
 	margin-bottom: 2em;
 }
 .bio-row-2{
 	display: flex;
 	align-items:center;
+	flex-wrap:wrap;
 	margin-bottom: 0.5em;
+}
+
+.bio-row-2-2{
+	display: flex;
+	align-items:center;
+	flex-wrap:wrap-reverse;
+	margin-bottom: 0.5em;
+}
+
+.bio-pic-1 {
+	text-align: right;
+	padding: 0px;
+}
+
+.bio-pic-1 img {
+	width:100%;
+	max-width: 18em;
+	min-width: 9em;
+}
+.bio-pic-2 {
+	padding: 0px;
+}
+.bio-pic-2 img {
+	width: 100%;
+	max-width: 15em ;
+	min-width: 3em;
 }
 .bio-1-1{
 	background-color: rgb(204,204,204);
@@ -425,6 +460,12 @@
     padding-bottom: 5px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+.event-pic {
+	text-align: right;
+}
+.event-text{
+	text-align-left
 }
 
 .bio-1-1 h4,h3 {
@@ -494,10 +535,140 @@
 	margin-top: 50px; 
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	}
 .policy {
 	margin-left: 15px;
 	margin-bottom: 20px;
+}
+@media (max-width: 1280px){
+	.title{
+	text-align: center;
+	display: block; 
+	color: white; 
+	font-size: 60px; 
+	font-family: inherit; 
+	padding: 0; 
+	text-shadow: -2px -2px 0px black, 
+	              2px -2px 0px black, 
+	              -2px 2px 0px black, 
+	              2px 2px 0px black; 
+	-webkit-print-color-adjust:exact;
+    -webkit-filter:blur(0);
+	}
+
+	.navheader-titleright h2,
+	.navheader-titleleft h2{
+		font-size: 20px;
+	}
+
+
+}
+@media(max-width: 1200px) {
+
+ .bio-2-1, .bio-2-2 {
+ 	border-top-left-radius: 10px;
+ 	border-bottom-left-radius: 10px; 
+ 	border-top-right-radius: 10px; 
+ 	border-bottom-right-radius: 10px;
+ }
+ .event-pic, .event-text{
+		text-align: center;
+	}
+ .finance-info {
+		text-align: center;
+	}
+ #download_list > li {
+ 	display: block;
+ 	margin-bottom: 20px;
+ }
+ #download_list > li:first-child{
+ 	padding: 0;
+ 	padding: 0 20px;
+ }
+}
+@media (max-width: 768px) {
+ .bio-row-1{
+ 	text-align: center;
+ }
+ .bio-pic-1{
+ 	text-align: center;
+ }
+ .bio-1-1{
+ 	border-top-left-radius: 10px;
+ 	border-bottom-left-radius: 10px;
+ }
+
+ .bio-row-2, .bio-row-2-2 {
+ 	text-align: center;
+ }
+ .bio-row-2 h4{
+ 	font-size:1.2em;
+ 	font-weight: bold;
+ }
+ .bio-row-2-2 h4{
+ 	font-size:1.1em;
+ 	font-weight: bold;
+ }
+ .bio-pic-2 {
+ 	text-align: center;
+ 	padding: auto;
+ }
+
+ .bio-2-1, .bio-2-2 {
+ 	border-top-left-radius: 10px;
+ 	border-bottom-left-radius: 10px; 
+ 	border-top-right-radius: 10px; 
+ 	border-bottom-right-radius: 10px;
+ }
+ .product_catelog{
+ 	text-align: center; 
+ }
+ #download_list {
+ 	text-align: center;
+ }
+ .download_label {
+	display:block;
+	margin: 0;
+}
+.buynow-button{
+	font-size: 2.2em;
+}
+.item .thumb {
+	width: 50%;
+	cursor: pointer;
+	float: left;
+}
+#tooling-size-tabs li a{
+	font-size: 1.25em;
+	padding:0 0.5em;
+}
+#tooling-size-label{
+	font-size: 1.25em;
+	padding:0;
+	margin: 0;
+}
+.panel-title{
+	font-size: 3em;
+}
+.rfq_form {
+	width: 100%;
+	padding:0;
+	text-align: center;
+}
+.rfq_form h1{
+	font-size: 2.5em;
+}
+
+}
+@media (max-width:373px){
+	.telefono{
+		margin-bottom: 0px;
+	}
+	#product-table {
+	font-size: 1.0em;
+}
+
 }
 
 ;

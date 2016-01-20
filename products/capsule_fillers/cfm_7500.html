@@ -26,29 +26,41 @@
     <nav class="navbar navbar-default">
       <div id="nav-container" class="container">
         <div class="row">
-          <div id="left_title"class="col-md-4">
+          <div id="left_title"class="col-lg-4 col-md-2 hidden-sm hidden-xs">
             <div class="navheader-logoleft">
-              <img src="http://dev.drpharm-usa.com/assets/images/logos/logo_rightstuff.png" alt="Right Stuff Equipment Logo" width="150" height="181">
+              <img src="../../assets/images/logos/logo_rightstuff.png" alt="Right Stuff Equipment Logo" style="max-width:150px; width:100%;">
             </div>
-            <div class="navheader-titleleft">
+            <div class="navheader-titleleft visible-lg">
               <p>Engineering, Integration, Manufacturing, and Exclusive provider of Dr. Pharm Equipment in the USA</p>
               <h4>Denver</h4>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4 col-md-8 col-sm-12">
             <div class="navheader-titlecenter">
               <h1 class="title">Dr.  Pharm  USA</h1>
               <p class="telefono">1-866-778-7826</p>
             </div>
           </div>
-          <div id="right_title" class="col-md-4">
-            <div class="navheader-titleright">
+          <div id="right_title" class="col-lg-4 col-md-2 hidden-sm hidden-xs">
+            <div class="navheader-titleright visible-lg">
               <p>Global Equipment Supplier to the Pharmaceutical &amp; Supplement Industries.</p>
               <h4>Beijing</h4>
             </div>
             <div class="navheader-logoright">
-              <img class="logo-img" src="http://dev.drpharm-usa.com/assets/images/logos/logo_dr_pharm_new_outline.png" alt="Dr Pharm Logo" width="167"  height="181">
+              <a href="#">
+                <img class="logo-img" src="../../assets/images/logos/logo_dr_pharm_new_outline.png" style="max-width:167px; width:100%;">
+              </a>
             </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-xs-12">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           </div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -78,27 +90,8 @@
       </div>
     </nav>
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-6">
-          <div id="carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_front.jpg" class="img-responsive" alt="Front View of CFM 7500 Capsule Filler">
-              </div>
-              <div class="item">
-                <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_rectifier.jpg" class="img-responsive" alt="Rectifier Magazines of CFM 7500 Automatic Capsule Filler">
-              </div> 
-
-              <div class="item">
-                <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_dosing.jpg" class="img-responsive" alt="6 Tamping Stations of CFM 7500 Capsule Filler" >
-              </div>
-              <div class="item">
-                <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_centralturret.jpg" class="img-responsive" alt="CFM 7500 Central Turret">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-xs-6">
+      <div class="row product-row">
+        <div class="col-md-6 col-md-push-6 col-xs-12" style="padding:0;">
           <div class="panel panel-primary">
             <div class="panel-heading"><h1 id="table_title" class="text-center">CFM 7500</h1></div>
             <table id="product-table" class="table table-hover">
@@ -135,6 +128,14 @@
                 <th>3.0 kW (4 HP)</th> 
               </tr>
               <tr>
+                <th>Power Requirements: </th>
+                <th>220V (3 Ph)</th>
+              </tr>
+              <tr>
+                <th>Air Requirements: </th>
+                <th>60 psi (4 cfm)</th>
+              </tr>
+              <tr>
                 <th>Dimensions (LxWxH): </th>
                 <th>1738x1226x2000 mm (68"x48"x79")</th>
               </tr>
@@ -148,148 +149,167 @@
             <a class="buynow-button btn" href="http://dev.drpharm-usa.com/products/RFQ/capsulefiller_RFQ">Request A Quote!</a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <h2>Photos</h2>
+        <div class="col-md-6 col-md-pull-6 col-xs-12">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_front.jpg" class="product-carousel-img" alt="Front View of CFM 7500 Capsule Filler">
+              </div>
+              <div class="item">
+                <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_rectifier.jpg" class="product-carousel-img" alt="Rectifier Magazines of CFM 7500 Automatic Capsule Filler">
+              </div> 
+
+              <div class="item">
+                <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_dosing.jpg" class="product-carousel-img" alt="6 Tamping Stations of CFM 7500 Capsule Filler" >
+              </div>
+              <div class="item">
+                <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_centralturret.jpg" class="product-carousel-img" alt="CFM 7500 Central Turret">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-12">
-           <div class="clearfix">
-            <div id="thumbcarousel" class="carousel slide" data-interval="false">
-              <div class="carousel-inner">
-                <div class="item active">
-                  <div data-target="#carousel" data-slide-to="0" class="thumb">
-                    <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_front.jpg" width="50" alt="Front View of CFM 7500 Thumbnail">
-                  </div>
-                  <div data-target="#carousel" data-slide-to="1" class="thumb">
-                    <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_rectifier.jpg" width="50" alt="CFM 7500 Rectifier Thumbnail">
-                  </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Photos</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+         <div class="clearfix">
+          <div id="thumbcarousel" class="carousel slide" data-interval="false">
+            <div class="carousel-inner">
+              <div class="item active">
+                <div data-target="#carousel" data-slide-to="0" class="thumb">
+                  <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_front.jpg" width="50" alt="Front View of CFM 7500 Thumbnail">
+                </div>
+                <div data-target="#carousel" data-slide-to="1" class="thumb">
+                  <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_rectifier.jpg" width="50" alt="CFM 7500 Rectifier Thumbnail">
+                </div>
 
-                  <div data-target="#carousel" data-slide-to="2" class="thumb"> 
-                    <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_dosing.jpg" width="50" alt="Tamping Stations of CFM 7500 Thumbnail">
-                  </div>
-                  <div data-target="#carousel" data-slide-to="3" class="thumb">
-                    <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_centralturret.jpg" width="50" alt="CFM 7500 Central Turret Thumbnail">
-                  </div>
+                <div data-target="#carousel" data-slide-to="2" class="thumb"> 
+                  <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_dosing.jpg" width="50" alt="Tamping Stations of CFM 7500 Thumbnail">
+                </div>
+                <div data-target="#carousel" data-slide-to="3" class="thumb">
+                  <img src="http://dev.drpharm-usa.com/assets/images/products/capsule/CFM 7500/capsule_CFM7500_centralturret.jpg" width="50" alt="CFM 7500 Central Turret Thumbnail">
                 </div>
               </div>
             </div>
-
-            <a id="carousel_control" class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a id="carousel_control" class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
           </div>
+
+          <a id="carousel_control" class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a id="carousel_control" class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Product Overview</h2>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Product Overview</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <ul>
+        <li><h4>Large size production and high speed output</li></h4>
+        <li><h4>Robust and reliable</h4></li>
+        <li><h4>SEW Eurodrive brand motor and gearbox used for dependable operation</h4></li>
+        <li><h4>Siemens brand PLC, HMI, and electrical componenets are standard</h4></li>
+        <li><h4>Allen Bradley brand option available</h4></li>
+        <li><h4>Touch screen HMI</h4></li>
+        <li><h4>Over 12 audible alarms alerts operator of machine activity</h4></li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <ul>
+        <li><h4>Heavy duty drive cam provides the ability to tamp stickier type products</h4></li>
+        <li><h4>Printable data statistics receipt available directly from machine</h4></li>
+        <li><h4>The innovative servo driven outfeed mechanism provides quick release of finished product</h4></li>
+        <li><h4>Meets all cGMP and FDA requirements</h4></li>
+        <li><h4>Capsule sizes 00 to 5</h4></li>
+        <li><h4>Dust collection unit, capsule polisher, and vacuum pump included in bundle price</h4></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Videos</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div id="video_container_3" class="col-md-4 col-sm-6 col-xs-12">
+      <iframe src="http://www.youtube.com/embed/LcaN_MXaAAw?&showinfo=0&autohide=1" frameborder="0"></iframe>
+      <a class="video" href="http://www.youtube.com/watch?v=LcaN_MXaAAw"></a> 
+    </div>
+    <div id="video_container_3" class="col-md-4 col-sm-6 col-xs-12">
+      <iframe src="http://www.youtube.com/embed/BDH25BPr5dg?&showinfo=0&autohide=1" frameborder="0"></iframe>
+      <a class="video" href="http://www.youtube.com/watch?v=BDH25BPr5dg"></a> 
+    </div>
+    <div id="video_container_3" class="col-md-4 col-sm-6 col-xs-12">
+      <iframe src="http://www.youtube.com/embed/XjtdDgj_CwA?&showinfo=0&autohide=1" frameborder="0"></iframe>
+      <a class="video" href="http://www.youtube.com/watch?v=XjtdDgj_CwA"></a> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h2>Downloads</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <ul id="download_list">
+        <li><a class="download_label" href="http://dev.drpharm-usa.com/assets/downloads/CFM7500.pdf" download> 
+          <img  src="http://dev.drpharm-usa.com/assets/images/logos/logo_adobe_pdf.png" alt="Adobe PDF logo"></a>
+          <p class="download_label">CFM 7500 Brochure</p>
+        </li> 
+        <li><a class="download_label" href="http://dev.drpharm-usa.com/assets/downloads/Encapsulation_Overview.pdf" download> 
+          <img  src="http://dev.drpharm-usa.com/assets/images/logos/logo_adobe_pdf.png" alt="Adobe PDF logo"></a>
+          <p class="download_label">Caspsule Filler Brochure</p>
+        </li> 
+      </ul>   
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  <div id="footer-container" class="container">
+    <div id="top-footer" class="row text-center">
+      <div class="col-md-4 col-xs-12">
+        <p>Sales &amp; Support</p>
+        <a href="mailto:sales@drpharm-usa.com" target="_top">sales@drpharm-usa.com</a>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <h4>Dr. Pharm USA<br>1605 E. 69th Ave<br>Denver, CO &#183; USA 80229</h4>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <p>Parts &amp; Services</p>
+        <a href="mailto:parts@drpharm-usa.com" target="_top">parts@drpharm-usa.com</a>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <ul>
-          <li><h4>Large production scale and high speed output</li></h4>
-          <li><h4>Robust and repeatable operation</h4></li>
-          <li><h4>SEW Eurodrive brand motor and gearbox used for reliable and smooth operation</h4></li>
-          <li><h4>Siemens brand PLC, and electrical componenets standard on every machine</h4></li>
-          <li><h4>Allen Bradley electrical componenets available upon request</h4></li>
-          <li><h4>Touch screen HMI for easy machine operation</h4></li>
-          <li><h4>12 audiable alarms available to alert operator for human and machine safety</h4></li>
-        </ul>
+    <div id="bottom-footer" class="row text-center">
+      <div class="col-md-4">
+        <h6>&#169; Dr. Pharm USA. All Rights Reserved </h6>
       </div>
-      <div class="col-md-6">
-        <ul>
-          <li><h4>Large cam design allows powerful, smooth and reliable machine operation</h4></li>
-          <li><h4>Data Statistics receipt directly printable from machine</h4></li>
-          <li><h4>The innovative servo driven outfeed mechanism allows quick release of finished product and overall high speed</h4></li>
-          <li><h4>Meets all cGMP and FDA requirements</h4></li>
-          <li><h4>Capsule sizes 00 to 5</h4></li>
-          <li><h4>Dust collection unit, capsule polisher, and vacuum pump included</h4></li>
-        </ul>
+      <div class="col-md-4">
+        <a href="http://dev.drpharm-usa.com/contact">Contact Us &#183; </a>
+        <a href="http://dev.drpharm-usa.com/tech_resources">Resources &#183; </a>
+        <a href="http://dev.drpharm-usa.com/privacy">Privacy &#183; </a>
+        <a target="_blank" href="http://dev.drpharm-usa.com/assets/downloads/terms.pdf">Terms &#183; </a>
+        <a href="http://dev.drpharm-usa.com/financing">Financing</a>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Videos</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div id="video_container_3" class="col-md-4 col-xs-12">
-        <iframe src="http://www.youtube.com/embed/LcaN_MXaAAw?&showinfo=0&autohide=1" frameborder="0"></iframe>
-        <a class="video" href="http://www.youtube.com/watch?v=LcaN_MXaAAw"></a> 
-      </div>
-      <div id="video_container_3" class="col-md-4 col-xs-12">
-        <iframe src="http://www.youtube.com/embed/BDH25BPr5dg?&showinfo=0&autohide=1" frameborder="0"></iframe>
-        <a class="video" href="http://www.youtube.com/watch?v=BDH25BPr5dg"></a> 
-      </div>
-      <div id="video_container_3" class="col-md-4 col-xs-12">
-        <iframe src="http://www.youtube.com/embed/XjtdDgj_CwA?&showinfo=0&autohide=1" frameborder="0"></iframe>
-        <a class="video" href="http://www.youtube.com/watch?v=XjtdDgj_CwA"></a> 
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <h2>Downloads</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        <ul id="download_list">
-          <li><a class="download_label" href="http://dev.drpharm-usa.com/assets/downloads/CFM7500.pdf" download> 
-            <img  src="http://dev.drpharm-usa.com/assets/images/logos/logo_adobe_pdf.png" alt="Adobe PDF logo"></a>
-            <p class="download_label">CFM 7500 Brochure</p>
-          </li> 
-          <li><a class="download_label" href="http://dev.drpharm-usa.com/assets/downloads/Encapsulation_Overview.pdf" download> 
-            <img  src="http://dev.drpharm-usa.com/assets/images/logos/logo_adobe_pdf.png" alt="Adobe PDF logo"></a>
-            <p class="download_label">Caspsule Filler Brochure</p>
-          </li> 
-        </ul>   
+      <div class="col-md-4 hidden-sm hidden-xs">
       </div>
     </div>
   </div>
-  <footer class="footer">
-    <div id="footer-container" class="container">
-      <div id="top-footer" class="row text-center">
-        <div class="col-md-4 col-xs-12">
-          <p>Sales &amp; Support</p>
-          <a href="mailto:sales@drpharm-usa.com" target="_top">sales@drpharm-usa.com</a>
-        </div>
-        <div class="col-md-4 col-xs-12">
-          <h4>Dr Pharm USA<br>1605 E. 69th Ave<br>Denver, CO &#183; USA 80229</h4>
-        </div>
-        <div class="col-md-4 col-xs-12">
-          <p>Parts &amp; Services</p>
-          <a href="mailto:parts@drpharm-usa.com" target="_top">parts@drpharm-usa.com</a>
-        </div>
-      </div>
-      <div id="bottom-footer" class="row text-center">
-        <div class="col-md-4">
-          <h6>&#169; Dr Pharm USA. All Rights Reserved </h6>
-        </div>
-        <div class="col-md-4">
-          <a href="http://dev.drpharm-usa.com/contact">Contact Us &#183; </a>
-          <a href="http://dev.drpharm-usa.com/tech_resources">Resources &#183; </a>
-          <a href="http://dev.drpharm-usa.com/privacy">Privacy &#183; </a>
-          <a target="_blank" href="http://dev.drpharm-usa.com/assets/downloads/terms.pdf">Terms &#183; </a>
-          <a href="http://dev.drpharm-usa.com/financing">Financing</a>
-        </div>
-        <div class="col-md-4">
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script>
-  $('.video').magnificPopup({
-    type: 'iframe',
-    iframe: {
-      patterns: {
-        youtube: {
+</footer>
+<script>
+$('.video').magnificPopup({
+  type: 'iframe',
+  iframe: {
+    patterns: {
+      youtube: {
                             /*
                             index: 'http://wwww.youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
                             
