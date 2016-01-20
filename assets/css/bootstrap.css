@@ -2531,7 +2531,7 @@ input[type="range"] {
 select[multiple],
 select[size] {
   height: auto;
-}
+} 
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
@@ -4278,18 +4278,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-top-right-radius: 5px;
 }
 
-@media (min-width: 1000px){
+@media (min-width: 768px){
   .navbar-nav > li > a {
     font-size: 16px;
   }
 }
 
-@media (max-width: 1001px){
-  .navbar-nav > li > a {
-    font-size: 12px;
-    padding: 0px 3px;
-  }
-}
 @media (max-width: 768px){
   .navbar-nav > li > a {
     font-size: 16px;
@@ -6674,7 +6668,7 @@ button.close {
 }
 @media (min-width: 1200px) {
   .visible-lg {
-    display: block !important;
+    display: inline-block !important;
   }
   table.visible-lg {
     display: table;

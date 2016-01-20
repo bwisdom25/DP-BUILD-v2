@@ -26,53 +26,43 @@
   <nav class="navbar navbar-default">
     <div id="nav-container" class="container">
       <div class="row">
-        <div id="left_title"class="col-md-4">
+        <div id="left_title"class="col-lg-4 col-md-2 hidden-sm hidden-xs">
           <div class="navheader-logoleft">
-            <a href="#">
-              <img src="../assets/images/logos/logo_rightstuff.png" alt="Right Stuff Equipment Logo" width="150" height="181">
-            </a>
+            <img src="../assets/images/logos/logo_rightstuff.png" alt="Right Stuff Equipment Logo" style="max-width:150px; width:100%;">
           </div>
-          <div class="navheader-titleleft">
+          <div class="navheader-titleleft visible-lg">
             <p>Engineering, Integration, Manufacturing, and Exclusive provider of Dr. Pharm Equipment in the USA</p>
             <h4>Denver</h4>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-8 col-sm-12">
           <div class="navheader-titlecenter">
             <h1 class="title">Dr.  Pharm  USA</h1>
-                <!--
-                <a href="https://www.youtube.com/channel/UCRjK7yDAc7HHGqEzGiiZDow">
-                    <img src="lib/images/logos/logo_youtube_white.png" width="16" height="16">
-                </a>
-                        <a href="https://plus.google.com/u/0/+KevinWeber/posts">
-                    <img src="lib/images/logos/logo_google_white.png" width="16" height="16">
-                </a>
-                <a href="https://www.linkedin.com/">
-                    <img src="lib/images/logos/logo_linkedin_blue.png" width="16" height="16">
-                </a>
-                <a href="#">
-                    <img src="lib/images/logos/logo_twitter_white.png" width="16"  height="16">
-                </a>
-                <a class="facebook_ico" href="https://www.facebook.com/drpharmusa">
-                    <img src="lib/images/logos/logo_facebook_white.png" width="16" height="16">
-                </a>
-              -->
-              <p class="telefono">1-866-778-7826</p>
-            </div>
-          </div>
-          <div id="right_title" class="col-md-4">
-            <div class="navheader-titleright">
-              <p>Global Equipment Supplier to the Pharmaceutical &amp; Supplement Industries.</p>
-              <h4>Beijing</h4>
-            </div>
-            <div class="navheader-logoright">
-              <a href="#">
-                <img class="logo-img" src="../assets/images/logos/logo_dr_pharm_new_outline.png" alt="Dr Pharm Logo" width="167"  height="181">
-              </a>
-            </div>
+            <p class="telefono">1-866-778-7826</p>
           </div>
         </div>
-
+        <div id="right_title" class="col-lg-4 col-md-2 hidden-sm hidden-xs">
+          <div class="navheader-titleright visible-lg">
+            <p>Global Equipment Supplier to the Pharmaceutical &amp; Supplement Industries.</p>
+            <h4>Beijing</h4>
+          </div>
+          <div class="navheader-logoright">
+            <a href="#">
+              <img class="logo-img" src="../assets/images/logos/logo_dr_pharm_new_outline.png" style="max-width:167px; width:100%;">
+            </a>
+          </div>
+        </div>
+      </div>
+        <div class="row text-center">
+          <div class="col-xs-12">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+        </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="../index.html">Home</a></li>
@@ -99,13 +89,9 @@
         </div>
       </div><!--end container-->
     </nav>
-
+  
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-xs-6">
-          <img src="../assets/images/products/capsule/CFM 3500/capsule_CFM3500_front.jpg" class="img-responsive img-rounded" width="450" alt="Front view of the CFM 3500 automatic capsule filler">
-        </div>
-        <div class="col-md-6 col-xs-6">
+      <div class="col-md-6 col-md-push-6 col-xs-12" style="margin-bottom:25px; padding:0;">
           <div class="panel panel-primary">
             <div class="panel-heading"><h1 class="text-center">Automatic Capsule Fillers</h1></div>
             <h3 class="text-center"><a href="capsule_fillers/pocket_400.html">POCKET 400</a></h3>
@@ -116,6 +102,10 @@
             <h3 class="text-center"><a href="capsule_fillers/cfm_7500.html">CFM 7500</a></h3>
             <h3 class="text-center"><a href="capsule_fillers/cfm_15000.html">CFM 15000</a></h3>
           </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-pull-6 col-xs-12">
+          <img src="../assets/images/products/capsule/CFM 3500/capsule_CFM3500_front.jpg" class="img-responsive img-rounded" style="width: 100%; margin:auto; max-width:35em;" alt="Front view of the CFM 3500 automatic capsule filler">
         </div>
       </div>
       <div class="row">
@@ -131,7 +121,7 @@
       <div class="row">
         <div class="col-md-12 col-xs-12">
           <h3>Features:</h3>
-        </div>
+        </div>      
       </div>
       <div class="row">
         <div class="col-md-6">
@@ -158,15 +148,15 @@
           <h2>Photos</h2>
         </div>
       </div>
-      <div class="product_catelog row">
-        <div class="col-md-4 col-xs-12">
-          <img src="../assets/images/products/capsule/CFM 2000/capsule_CFM2000_center.jpg" class="img-responsive" alt="Center turret of the CFM 2000 automatic capsule filler" style="width:100%; margin:0;">
+      <div class="product_catelog row text-center">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <img src="../assets/images/products/capsule/CFM 2000/capsule_CFM2000_center.jpg" class="img-responsive" alt="Center turret of the CFM 2000 automatic capsule filler" >
         </div>
-        <div class="col-md-4 col-xs-12">
-          <img src="../assets/images/products/capsule/CFM 3500/capsule_CFM3500_centralturret.jpg" class="img-responsive" alt="Inside the CFM 3500 encapsulation machine" style="width:100%; margin:0;">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <img src="../assets/images/products/capsule/CFM 3500/capsule_CFM3500_centralturret.jpg" class="img-responsive" alt="Inside the CFM 3500 encapsulation machine">
         </div>
-        <div class="col-md-4 col-xs-12">
-          <img src="../assets/images/products/capsule/CFM 7500/capsule_CFM7500_dosing.jpg" class="img-responsive" alt="Detailed view of electrical panel inside the Pocket 800 encapsulator" style="width:100%; margin:0;">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <img src="../assets/images/products/capsule/CFM 7500/capsule_CFM7500_dosing.jpg" class="img-responsive" alt="Detailed view of electrical panel inside the Pocket 800 encapsulator">
         </div>
       </div>
       <div class="row">
@@ -175,15 +165,15 @@
         </div>
       </div>
       <div class="row">
-        <div id="video_container_3" class="col-md-4 col-xs-12">
+        <div id="video_container_3" class="col-md-4 col-sm-6 col-xs-12">
           <iframe src="http://www.youtube.com/embed/Dbh2AOS_WUU?&showinfo=0&autohide=1" frameborder="0"></iframe>
           <a class="video" href="http://www.youtube.com/watch?v=Dbh2AOS_WUU"></a> 
         </div>
-        <div id="video_container_3" class="col-md-4 col-xs-12">
+        <div id="video_container_3" class="col-md-4 col-sm-6 col-xs-12">
           <iframe src="http://www.youtube.com/embed/LcaN_MXaAAw?&showinfo=0&autohide=1" frameborder="0"></iframe>
           <a class="video" href="http://www.youtube.com/watch?v=LcaN_MXaAAw"></a> 
         </div>
-        <div id="video_container_3" class="col-md-4 col-xs-12">
+        <div id="video_container_3" class="col-md-4 col-sm-6 col-xs-12">
           <iframe src="http://www.youtube.com/embed/XjtdDgj_CwA?&showinfo=0&autohide=1" frameborder="0"></iframe>
           <a class="video" href="http://www.youtube.com/watch?v=XjtdDgj_CwA"></a> 
         </div>
@@ -232,7 +222,7 @@
           <a target="_blank" href="../assets/downloads/terms.pdf">Terms &#183; </a>
           <a href="../financing.html">Financing</a>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 hidden-sm hidden-xs">
         </div>
       </div>
     </div>

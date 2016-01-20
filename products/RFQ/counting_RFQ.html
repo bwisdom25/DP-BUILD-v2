@@ -29,53 +29,43 @@
   <nav class="navbar navbar-default">
     <div id="nav-container" class="container">
       <div class="row">
-        <div id="left_title"class="col-md-4">
+        <div id="left_title"class="col-lg-4 col-md-2 hidden-sm hidden-xs">
           <div class="navheader-logoleft">
-            <a href="#">
-              <img src="../../assets/images/logos/logo_rightstuff.png" alt="Right Stuff Equipment Logo" width="150" height="181">
-            </a>
+            <img src="../../assets/images/logos/logo_rightstuff.png" alt="Right Stuff Equipment Logo" style="max-width:150px; width:100%;">
           </div>
-          <div class="navheader-titleleft">
+          <div class="navheader-titleleft visible-lg">
             <p>Engineering, Integration, Manufacturing, and Exclusive provider of Dr. Pharm Equipment in the USA</p>
             <h4>Denver</h4>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-8 col-sm-12">
           <div class="navheader-titlecenter">
             <h1 class="title">Dr.  Pharm  USA</h1>
-                <!--
-                <a href="https://www.youtube.com/channel/UCRjK7yDAc7HHGqEzGiiZDow">
-                    <img src="lib/images/logos/logo_youtube_white.png" width="16" height="16">
-                </a>
-                        <a href="https://plus.google.com/u/0/+KevinWeber/posts">
-                    <img src="lib/images/logos/logo_google_white.png" width="16" height="16">
-                </a>
-                <a href="https://www.linkedin.com/">
-                    <img src="lib/images/logos/logo_linkedin_blue.png" width="16" height="16">
-                </a>
-                <a href="#">
-                    <img src="lib/images/logos/logo_twitter_white.png" width="16"  height="16">
-                </a>
-                <a class="facebook_ico" href="https://www.facebook.com/drpharmusa">
-                    <img src="lib/images/logos/logo_facebook_white.png" width="16" height="16">
-                </a>
-              -->
-              <p class="telefono">1-866-778-7826</p>
-            </div>
-          </div>
-          <div id="right_title" class="col-md-4">
-            <div class="navheader-titleright">
-              <p>Global Equipment Supplier to the Pharmaceutical &amp; Supplement Industries.</p>
-              <h4>Beijing</h4>
-            </div>
-            <div class="navheader-logoright">
-              <a href="#">
-                <img class="logo-img" src="../../assets/images/logos/logo_dr_pharm_new_outline.png" alt="Dr Pharm Logo" width="167"  height="181">
-              </a>
-            </div>
+            <p class="telefono">1-866-778-7826</p>
           </div>
         </div>
-
+        <div id="right_title" class="col-lg-4 col-md-2 hidden-sm hidden-xs">
+          <div class="navheader-titleright visible-lg">
+            <p>Global Equipment Supplier to the Pharmaceutical &amp; Supplement Industries.</p>
+            <h4>Beijing</h4>
+          </div>
+          <div class="navheader-logoright">
+            <a href="#">
+              <img class="logo-img" src="../../assets/images/logos/logo_dr_pharm_new_outline.png" style="max-width:167px; width:100%;">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-xs-12">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+      </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="../../index.html">Home</a></li>
@@ -111,15 +101,15 @@
       </div> 
       <form id="rfqForm" action="../../assets/php/counting_rfq_engine.php" method="POST" >
         <div class="row">
-          <div class="form-border rfq_form col-lg-12 col-sm-12 col-xs-12">
+          <div class="form-border col-lg-9 col-sm-12 col-xs-12">
             <div class="row">
-              <div class="col-xs-4">
+              <div class="col-lg-4 col-sm-5 col-xs-12">
                 <div class="form-group ">
                   <label for="fnameInput" class="control-label">First Name</label>
                   <input type="text" class="form-control" id="fnameInput" name="fnameInput">
                 </div>
               </div>
-              <div class="col-xs-4">
+              <div class="col-lg-4 col-sm-5 col-xs-12">
                 <div class="form-group">
                   <label for="lnameInput" class="control-label">Last Name</label>
                   <input type="text" class="form-control" id="lnameInput" name="lnameInput"> 
@@ -127,13 +117,13 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-xs-6">
+              <div class="col-lg-6 col-sm-5 col-xs-12">
                 <div class="form-group">
                   <label for="emailInput" class="control-label">Email</label> 
                   <input type="email" class="form-control" id="emailInput" name="emailInput">
                 </div>
               </div>
-              <div class="col-xs-4">
+              <div class="col-lg-4 col-sm-4 col-xs-12">
                 <div class="form-group">
                   <label for="phonenumberInput" class="control-label">Telephone</label> 
                   <input type="tel" class="form-control" id="phonenumberInput" name="phonenumberInput">
@@ -141,13 +131,13 @@
               </div>
             </div>
             <div class"row">
-              <div class="col-xs-5">
+              <div class="col-lg-5 col-sm-6 col-xs-12">
                 <div class="form-group">
                   <label for="companyInput">Company</label>
                   <input type="text" class="form-control" id="companyInput" name="compnameInput">
                 </div>
               </div>
-              <div class="col-xs-5">
+              <div class="col-lg-5 col-sm-6 col-xs-12">
                 <div class="form-group">
                   <label for="titleInput">Title</label>
                   <input type="text" class="form-control" id="titleInput" name="titleInput">
@@ -155,25 +145,25 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-xs-5">
+              <div class="col-lg-5 col-sm-7 col-xs-12">
                 <div class="form-group">
                   <label for="addressInput" class="control-label">Address</label>
                   <input type="text" class="form-control" id="addressInput" name="addressInput">
                 </div>
               </div>
-              <div class="col-xs-3">
+              <div class="col-lg-3 col-sm-5 col-xs-12">
                 <div class="form-group">
                   <label for="cityInput" class="control-label">City</label>
                   <input type="text" class="form-control" id="cityInput" name="cityInput">
                 </div>
               </div>
-              <div class="col-xs-2">
+              <div class="col-lg-2 col-sm-3 col-xs-6">
                 <div class="form-group">
                   <label for="stateInput" class="control-label">State</label>
                   <input type="text" class="form-control" id="stateInput" name="stateInput">
                 </div>
               </div>
-              <div class="col-xs-2">
+              <div class="col-lg-2 col-sm-4 col-xs-6">
                 <div class="form-group">
                   <label for="zipInput" class="control-label">Zip Code</label>
                   <input type="text" class="form-control" id="zipInput" name="zipInput">
@@ -183,9 +173,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="form-border rfq_form col-lg-12 col-sm-12 col-xs-12">
+          <div class="form-border rfq_form col-lg-9 col-sm-12 col-xs-12">
             <div class="row text-center">
-              <div class="col-lg-12 col-xs-12">
+              <div class="col-xs-12">
                 <div class="form group form-inline center-form">
                   <label>Intreset: </label>
                   <select class="form-control" style="width:50%;" name="reasonInput">
@@ -222,7 +212,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-xs-6">
+              <div class="col-lg-6 col-sm-6 col-xs-12">
                 <label>Run Rate:</label>
                 <div class="form-group form-inline center-form">
                   <input type="number" class="form-control" id="rateNUMInput" name="rateNUMInput"><label style="margin-left:5px;margin-right:5px;">Bottles Per </label>
@@ -235,7 +225,7 @@
                   </select>
                 </div>
               </div>
-              <div class="col-xs-6">
+              <div class="col-lg-6 col-sm-6 col-xs-12">
                 <label>Products:</label>
                 <div class="form-group center-form">
                   <label class="checkbox-inline"><input type="checkbox" name="productInput[]" value="Tablets">Tablets</label>
@@ -245,7 +235,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-xs-6">
+              <div class="col-lg-6 col-sm-6 col-xs-12">
                 <label>Tablet Shape: </label>
                 <div class="form-group center-form">
                   <label class="radio-inline">
@@ -262,14 +252,14 @@
                   </label>
                 </div>
               </div>
-              <div class="col-xs-6">
+              <div class="col-lg-6 col-sm-6 col-xs-12">
                 <label>Tablet Dimensions (mm): </label>
                 <div class="form-group form-inline center-form">
-                  <input type="number" class="form-control" style="width:20%;" name="tabletlengthInput">
+                  <input type="number" class="form-control" style="display:inline; max-width:4.75em; width:20%;" name="tabletlengthInput">
                   <label>L</label>
-                  <input type="number" class="form-control" style="width:20%;"name="tabletwidthInput">
+                  <input type="number" class="form-control" style="display:inline; max-width:4.75em; width:20%;"name="tabletwidthInput">
                   <label>W</label>
-                  <input type="number" class="form-control" style="width:20%;" name="tabletthickInput">
+                  <input type="number" class="form-control" style="display:inline; max-width:4.75em; width:20%;" name="tabletthickInput">
                   <label>T</label>
                 </div>
               </div> 
@@ -292,13 +282,13 @@
               <div class="col-lg-12 col-xs-12">
                 <label>Room Dimensions: </label>
                 <div class="form-group form-inline center-form">
-                  <input type="number" class="form-control" style="width:20%;" name="roomlengthInput">
+                  <input type="number" class="form-control" style="display:inline; max-width:4.75em; width:20%;" name="roomlengthInput">
                   <label>L</label>
-                  <input type="number" class="form-control" style="width:20%;"name="roomwidthInput">
+                  <input type="number" class="form-control" style="display:inline; max-width:4.75em; width:20%;"name="roomwidthInput">
                   <label>W</label>
-                  <input type="number" class="form-control" style="width:20%;" name="roommheightInput">
+                  <input type="number" class="form-control" style="display:inline; max-width:4.75em; width:20%;" name="roommheightInput">
                   <label>H</label>
-                  <select class="form-control" name="roomdunitInput">
+                  <select class="form-control" name="roomdunitInput" style="display:inline; max-width:4.75em; width:20%;">
                     <option value="Feet">Feet</option>
                     <option value="Inches">Inches</option>
                     <option value="Meters">Meters</option>
@@ -311,7 +301,7 @@
         </div>
 
         <div class="row">
-          <div class="form-border rfq_form col-lg-12 col-sm-12 col-xs-12">
+          <div class="form-border rfq_form col-lg-9 col-sm-12 col-xs-12">
             <div class="row">
               <span id="helpBlock" class="help-block">For us to better understand your application and provide you with the best solution please describe your current operation and your overall goal you want to achieve. Please provide as much detail as you can. (i.e. Product, Bottle Sizes, Cap Sizes, Sleeving, etc.) </span>
               <div class="col-xs-12">
