@@ -25,49 +25,42 @@
   <nav class="navbar navbar-default">
     <div id="nav-container" class="container">
       <div class="row">
-        <div id="left_title"class="col-md-4">
+        <div id="left_title" class="col-lg-4 col-md-2 hidden-sm hidden-xs">
           <div class="navheader-logoleft">
-            <img src="http://dev.drpharm-usa.com/assets/images/logos/logo_rightstuff.png" alt="Right Stuff Equipment Logo" width="150" height="181">
+            <img src="http://dev.drpharm-usa.com/assets/images/logos/logo_rightstuff.png" alt="Right Stuff Equipment Logo" style="max-width:150px; width:100%;">
           </div>
-          <div class="navheader-titleleft">
+          <div class="navheader-titleleft visible-lg">
             <p>Engineering, Integration, Manufacturing, and Exclusive provider of Dr. Pharm Equipment in the USA</p>
             <h4>Denver</h4>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4 col-md-8 col-sm-12">
           <div class="navheader-titlecenter">
             <h1 class="title">Dr.  Pharm  USA</h1>
-                <!--
-                <a href="https://www.youtube.com/channel/UCRjK7yDAc7HHGqEzGiiZDow">
-                    <img src="lib/images/logos/logo_youtube_white.png" width="16" height="16">
-                </a>
-                        <a href="https://plus.google.com/u/0/+KevinWeber/posts">
-                    <img src="lib/images/logos/logo_google_white.png" width="16" height="16">
-                </a>
-                <a href="https://www.linkedin.com">
-                    <img src="lib/images/logos/logo_linkedin_blue.png" width="16" height="16">
-                </a>
-                <a href="#">
-                    <img src="lib/images/logos/logo_twitter_white.png" width="16"  height="16">
-                </a>
-                <a class="facebook_ico" href="https://www.facebook.com/drpharmusa">
-                    <img src="lib/images/logos/logo_facebook_white.png" width="16" height="16">
-                </a>
-              -->
-              <p class="telefono">1-866-778-7826</p>
-            </div>
-          </div>
-          <div id="right_title" class="col-md-4">
-            <div class="navheader-titleright">
-              <p>Global Equipment Supplier to the Pharmaceutical &amp; Supplement Industries.</p>
-              <h4>Beijing</h4>
-            </div>
-            <div class="navheader-logoright">
-              <img class="logo-img" src="http://dev.drpharm-usa.com/assets/images/logos/logo_dr_pharm_new_outline.png" alt="Dr Pharm Logo" width="167"  height="181">
-            </div>
+            <p class="telefono">1-866-778-7826</p>
           </div>
         </div>
-
+        <div id="right_title" class="col-lg-4 col-md-2 hidden-sm hidden-xs">
+          <div class="navheader-titleright visible-lg">
+            <p>Global Equipment Supplier to the Pharmaceutical &amp; Supplement Industries.</p>
+            <h4>Beijing</h4>
+          </div>
+          <div class="navheader-logoright">
+            <a href="#">
+              <img class="logo-img" src="http://dev.drpharm-usa.com/assets/images/logos/logo_dr_pharm_new_outline.png" alt="Dr. Pharm Logo" style="max-width:167px; width:100%;">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-xs-12">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="http://dev.drpharm-usa.com">Home</a></li>
@@ -92,26 +85,18 @@
             <li id="last-child"><a href="http://dev.drpharm-usa.com/contact">Contact</a></li>
           </ul>
         </div>
-      </div><!--end container-->
+      </div>
+    </div><!--end container-->
     </nav>
 
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-sm-6">
-          <div id="carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="http://dev.drpharm-usa.com/assets/images/products/unscramblers/unscrambler_LP700A_front.jpg" style="width:90%;"class="img-responsive"alt="Front View of PL 700A" >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-xs-6">
+      <div class="row product-row">
+        <div class="col-md-6 col-md-push-6 col-xs-12" style="padding:0;">
           <div id="tablet_press_table" class="panel panel-primary">
             <div id="tablet_press" class="panel-heading">
               <h1 id="table_title" class="text-center">LP 700A</h1>
             </div> 
-            <table id="product-table" class="table table-hover">
+            <table class="table table-hover product-table">
               <tr>
                 <th>Model: </th>
                 <th>LP 700A</th>
@@ -124,7 +109,6 @@
                 <th>Hopper Volume: </th>
                 <th>0.2 m<sup>3</sup></th>
               </tr>
-              <tr>
                 <tr>
                   <th>Diameter of Turn-Table: </th>
                   <th>&#8960; 900mm</th>
@@ -143,6 +127,10 @@
                     <th>0.5kW (1/2HP)</th>
                   </tr>
                   <tr>
+                      <th>Power Requirements: </th>
+                      <th>220 V (3 Ph 60 Hz)</th>
+                  </tr>
+                  <tr>
                     <th>Dimensions (LxWxH): </th>
                     <th>1040x1800x1100mm (41"x71"x43")</th>
                   </tr>
@@ -156,6 +144,15 @@
                 <a class="buynow-button btn" href="http://dev.drpharm-usa.com/products/RFQ/counting_RFQ">Request A Quote!</a>
               </div>
             </div><!--endcol-->
+        <div class="col-md-6 col-md-pull-6 col-xs-12">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="http://dev.drpharm-usa.com/assets/images/products/unscramblers/unscrambler_LP700A_front.jpg" style="width:90%;" class="img-responsive" alt="Front View of LP 700A" >
+              </div>
+            </div>
+          </div>
+        </div>
           </div> <!--endrow-->
           <div class="row">
             <div class="col-md-12">
@@ -163,57 +160,57 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-6">
               <ul>
-                <li><h4>Mid Level Model</h4></li>
+                <li><h4>Mid level model for round bottles of various size</h4></li>
                 <li><h4>Hopper bin for bottle loading</h4></li> 
                 <li><h4>Available for different round bottles</h4></li>
-                <li><h4>Easy changeover for different round bottle sizes</li><h4>
+                <li><h4>Easy changeover</h4></li>
                 <li><h4>PLC controlled</h4></li>
               </ul>
             </div>
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-6">
               <ul>
-                <li><h4>Automatic bottle orientation</li><h4> 
-                <li><h4>Low Level Hopper Sensor</h4></li>
-                <li><h4>Downstream bottle sensor temporarily shuts down unscrambler until bottles clear</h4></li> 
-                <li><h4>Unscrambler speed is easily adjustable</h4></li>
+                <li><h4>Automatic bottle orientation</h4></li> 
+                <li><h4>Low level hopper sensor</h4></li>
+                <li><h4>Downstream bottle sensor</h4></li> 
+                <li><h4>Adjustable speed</h4></li>
               </ul>
             </div>
           </div>
         </div>
 
-        <footer class="footer">
-          <div id="footer-container" class="container">
-            <div id="top-footer" class="row text-center">
-              <div class="col-md-4 col-xs-12">
-                <p>Sales &amp; Support</p>
-                <a href="mailto:sales@drpharm-usa.com" target="_top">sales@drpharm-usa.com</a>
-              </div>
-              <div class="col-md-4 col-xs-12">
-                <h4>Dr Pharm USA<br>1605 E. 69th Ave<br>Denver, CO &#183; USA 80229</h4>
-              </div>
-              <div class="col-md-4 col-xs-12">
-                <p>Parts &amp; Services</p>
-                <a href="mailto:parts@drpharm-usa.com" target="_top">parts@drpharm-usa.com</a>
-              </div>
-            </div>
-            <div id="bottom-footer" class="row text-center">
-              <div class="col-md-4">
-                <h6>&#169; Dr Pharm USA. All Rights Reserved </h6>
-              </div>
-              <div class="col-md-4">
-                <a href="http://dev.drpharm-usa.com/contact">Contact Us &#183; </a>
-                <a href="http://dev.drpharm-usa.com/tech_resources">Resources &#183; </a>
-                <a href="http://dev.drpharm-usa.com/privacy">Privacy &#183; </a>
-                <a target="_blank" href="http://dev.drpharm-usa.com/assets/downloads/terms.pdf">Terms &#183; </a>
-                <a href="http://dev.drpharm-usa.com/financing">Financing</a>
-              </div>
-              <div class="col-md-4">
-              </div>
-            </div>
-          </div>
-        </footer>
+<footer class="footer">
+  <div id="footer-container" class="container">
+    <div id="top-footer" class="row text-center">
+      <div class="col-md-4 col-xs-12">
+        <p>Sales &amp; Support</p>
+        <a href="mailto:sales@drpharm-usa.com" target="_top">sales@drpharm-usa.com</a>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <h4>Dr. Pharm USA<br>1605 E. 69th Ave<br>Denver, CO &#183; USA 80229</h4>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <p>Parts &amp; Services</p>
+        <a href="mailto:parts@drpharm-usa.com" target="_top">parts@drpharm-usa.com</a>
+      </div>
+    </div>
+    <div id="bottom-footer" class="row text-center">
+      <div class="col-md-4">
+        <h6>&#169; Dr. Pharm USA. All Rights Reserved </h6>
+      </div>
+      <div class="col-md-4">
+        <a href="http://dev.drpharm-usa.com/contact">Contact Us &#183; </a>
+        <a href="http://dev.drpharm-usa.com/tech_resources">Resources &#183; </a>
+        <a href="http://dev.drpharm-usa.com/privacy">Privacy &#183; </a>
+        <a target="_blank" href="http://dev.drpharm-usa.com/assets/downloads/terms.pdf">Terms &#183; </a>
+        <a href="http://dev.drpharm-usa.com/financing">Financing</a>
+      </div>
+      <div class="col-md-4 hidden-sm hidden-xs">
+      </div>
+    </div>
+  </div>
+</footer>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- RUNNING ON LOCAL BOX (NO INTRANETS)
