@@ -22,6 +22,8 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="http://dev.drpharm-usa.com/assets/js/bootstrap.js"></script>
   <script src="http://dev.drpharm-usa.com/assets/js/jquery.magnific-popup.js"></script>
+  <script src="http://dev.drpharm-usa.com/assets/js/jquery.validate.js"></script>
+  <script src="http://dev.drpharm-usa.com/assets/js/newsformValidate.js"></script>
   <nav class="navbar navbar-default">
     <div id="nav-container" class="container">
       <div class="row">
@@ -36,7 +38,7 @@
         </div>
         <div class="col-lg-4 col-md-8 col-sm-12">
           <div class="navheader-titlecenter">
-            <h1 class="title">Dr.  Pharm  USA</h1>
+            <p class="title">Dr.  Pharm  USA</p>
             <p class="telefono">1-866-778-7826</p>
           </div>
         </div>
@@ -62,238 +64,245 @@
           </button>
         </div>
       </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="http://dev.drpharm-usa.com">Home</a></li>
-            <li><a href="http://dev.drpharm-usa.com/about">About</a></li>
-            <li class="dropdown active">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Equipment<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="http://dev.drpharm-usa.com/products/capsule_fillers">Capsule Fillers</a></li>
-                <li><a href="http://dev.drpharm-usa.com/products/tablet_presses">Tablet Presses</a></li>
-                <li><a href="http://dev.drpharm-usa.com/products/counters">Counting Lines</a></li>
-                <li><a href="http://dev.drpharm-usa.com/products/unscramblers">Unscramblers</a></li>
-                <li><a href="http://dev.drpharm-usa.com/products/coming_soon">Coating Machines</a></li>
-                <li><a href="http://dev.drpharm-usa.com/products/coming_soon">Fluid Bed Dryers</a></li>
-                <li><a href="http://dev.drpharm-usa.com/products/coming_soon">Wet Granulators</a></li>
-                <li><a href="http://dev.drpharm-usa.com/products/coming_soon">Bins &amp; Blenders</a></li>
-              </ul>
-            </li>
-            <li><a href="http://dev.drpharm-usa.com/parts_services">Parts &amp; Services</a></li>
-            <li><a href="http://dev.drpharm-usa.com/tech_resources">Technical Resources</a></li>
-            <!-- <li><a href="#">Blog</a></li> -->
-            <li><a href="http://dev.drpharm-usa.com/events">Events</a></li>
-            <li id="last-child"><a href="http://dev.drpharm-usa.com/contact">Contact</a></li>
-          </ul>
-        </div>
-      </div><!--end container-->
-    </nav>
-
-    <div class="container">
-      <div class="row product-row">
-        <div class="col-md-6 col-md-push-6 col-xs-12" style="padding:0;">
-          <div id="tablet_press_table" class="panel panel-primary">
-            <div id="tablet_press" class="panel-heading"><h1 id="table_title" class="text-center">GZP / ZPT - 370</h1></div>
-            <h4 style="display:inline-block; vertical-align:middle; margin:0 5px;; font-size: 1.5em;">Tooling Size:</h4>
-            <ul id="tooling-size-tabs" class="nav nav-tabs">
-              <li class="active"><a data-toggle="tab" href="#d-tool">D</a></li>
-              <li><a data-toggle="tab" href="#b-tool">B</a></li>
-              <li><a data-toggle="tab" href="#bb-tool">BB</a></li>
-              <!--<li><a data-toggle="tab" href="#menu3">Menu 3</a></li>-->
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="http://dev.drpharm-usa.com">Home</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="http://dev.drpharm-usa.com/about_drpharm">About Dr. Pharm</a></li>
+              <li><a href="http://dev.drpharm-usa.com/about_rightstuff">About Right Stuff Equipment-Exclusive US Distributor</a></li>
+              <li><a href="http://dev.drpharm-usa.com/about_team">Meet The Dr. Pharm USA Team</a></li>
             </ul>
-            <div class="tab-content">
-              <div id="d-tool" class="tab-pane fade in active">
-                <table class="product-table table table-hover">
-                  <tr>
-                    <th>Model: </th>
-                    <th>GZP-26</th>
-                  </tr>
-                  <tr>
-                    <th>Number of Stations: </th>
-                    <th>26</th>
-                  </tr>
-                  <tr>
-                    <th>Max Output(Tablets/Hour): </th>
-                    <th>34,000 - 171,000</th>
-                  </tr>
-                  <tr>
-                    <th>RPM: </th>
-                    <th>22-110</th>
-                  </tr>
-                  <tr>
-                    <th>Main Pressure: </th>
-                    <th>100 kN (11 tons)</th>
-                  </tr>
-                  <tr>
-                    <th>Pre Pressure: </th>
-                    <th>14 kN (1.5 tons)</th>
-                  </tr>
-                  <tr>
-                    <th>Max Tablet Diameter: </th>
-                    <th>&#8960;25 mm</th>
-                  </tr>
-                  <tr>
-                    <th>Max Length of Irregular Tablet: </th>
-                    <th>25 mm</th>
-                  </tr>
-                  <tr>
-                    <th>Diameter of Die: </th>
-                    <th>&#8960;38.1 mm</th>
-                  </tr>
-                  <tr>
-                    <th>Max Filling Depth: </th>
-                    <th>20 mm</th>
-                  </tr>
-                  <tr>
-                    <th>Diameter of Punch: </th>
-                    <th>&#8960;25.35 mm</th>
-                  </tr>
-                  <tr>
-                    <th>Main Motor Power: </th>
-                    <th>7.5kW (10 HP)</th>
-                  </tr>
-                  <tr>
-                    <th>Power Requirements: </th>
-                    <th>220 V (3 Ph 60 Hz)</th>
-                  </tr>
-                  <tr>
-                    <th>Dimensions (LxWxH): </th>
-                    <th>820x1100x1750 mm (32"x43"x69")</th>
-                  </tr>
-                  <tr>
-                    <th>Net Weight: </th>
-                    <th>1600 kg (3527 lbs)</th>
-                  </tr>
-                </table>
-              </div>
-              <div id="b-tool" class="tab-pane fade">
-                <table class="product-table table table-hover">
-                  <tr>
-                    <th>Model: </th>
-                    <th>GZP-32</th>
-                  </tr>
-                  <tr>
-                    <th>Number of Stations: </th>
-                    <th>32</th>
-                  </tr>
-                  <tr>
-                    <th>Max Output(Tablets/Hour): </th>
-                    <th>40,000-211,000</th>
-                  </tr>
-                  <tr>
-                    <th>RPM: </th>
-                    <th>22-110</th>
-                  </tr>
-                  <tr>
-                    <th>Main Pressure: </th>
-                    <th>100 kN (11 tons)</th>
-                  </tr>
-                  <tr>
-                    <th>Pre Pressure: </th>
-                    <th>14 kN (1.5 tons)</th>
-                  </tr>
-                  <tr>
-                    <th>Max Tablet Diameter: </th>
-                    <th>&#8960;16 mm</th>
-                  </tr>
-                  <tr>
-                    <th>Max Length of Irregular Tablet: </th>
-                    <th>19 mm</th>
-                  </tr>
-                  <tr>
-                    <th>Diameter of Die: </th>
-                    <th>&#8960;30.16 mm</th>
-                  </tr>
-                  <tr>
-                    <th>Max Filling Depth: </th>
-                    <th>20 mm</th>
-                  </tr>
-                  <tr>
-                    <th>Diameter of Punch: </th>
-                    <th>&#8960;19 mm</th>
-                  </tr>
-                  <tr>
-                    <th>Main Motor Power: </th>
-                    <th>7.5kW (10 HP)</th>
-                  </tr>
-                  <tr>
-                    <th>Power Requirements: </th>
-                    <th>220 V (3 Ph 60 Hz)</th>
-                  </tr>
-                  <tr>
-                    <th>Dimensions (LxWxH): </th>
-                    <th>820x1100x1750 mm (32"x43"x69")</th>
-                  </tr>
-                  <tr>
-                    <th>Net Weight: </th>
-                    <th>1600 kg (3527 lbs)</th>
-                  </tr>
-                </table>
-              </div>
-              <div id="bb-tool" class="tab-pane fade">
-                <table class="product-table table table-hover">
-                  <tr>
-                    <th>Model: </th>
-                    <th>GZP-40</th>
-                  </tr>
-                  <tr>
-                    <th>Number of Stations: </th>
-                    <th>40</th>
-                  </tr>
-                  <tr>
-                    <th>Max Output(Tablets/Hour): </th>
-                    <th>52,000-264,000</th>
-                  </tr>
-                  <tr>
-                    <th>RPM: </th>
-                    <th>22-110</th>
-                  </tr>
-                  <tr>
-                    <th>Main Pressure: </th>
-                    <th>100 kN (11 tons)</th>
-                  </tr>
-                  <tr>
-                    <th>Pre Pressure: </th>
-                    <th>14 kN (1.5 tons)</th>
-                  </tr>
-                  <tr>
-                    <th>Max Tablet Diameter: </th>
-                    <th>&#8960;13 mm</th>
-                  </tr>
-                  <tr>
-                    <th>Max Length of Irregular Tablet: </th>
-                    <th>16 mm</th>
-                  </tr>
-                  <tr>
-                    <th>Diameter of Die: </th>
-                    <th>&#8960;24 mm</th>
-                  </tr>
-                  <tr>
-                    <th>Max Filling Depth: </th>
-                    <th>16 mm</th>
-                  </tr>
-                  <tr>
-                    <th>Diameter of Punch: </th>
-                    <th>&#8960;19 mm</th>
-                  </tr>
-                  <tr>
-                    <th>Main Motor Power: </th>
-                    <th>7.5kW (10 HP)</th>
-                  </tr>
-                  <tr>
-                    <th>Power Requirements: </th>
-                    <th>220 V (3 Ph 60 Hz)</th>
-                  </tr>
-                  <tr>
-                    <th>Dimensions (LxWxH): </th>
-                    <th>820x1100x1750 mm (32"x43"x69")</th>
-                  </tr>
-                  <tr>
-                    <th>Net Weight: </th>
-                    <th>1200 kg (2645 lbs)</th>
-                  </tr>
-                </table>
-              </div>
+          </li>
+          <li class="dropdown active">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Equipment<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="http://dev.drpharm-usa.com/products/capsule_fillers">Capsule Fillers</a></li>
+              <li><a href="http://dev.drpharm-usa.com/products/tablet_presses">Tablet Presses</a></li>
+              <li><a href="http://dev.drpharm-usa.com/products/counters">Counting Lines</a></li>
+              <li><a href="http://dev.drpharm-usa.com/products/unscramblers">Unscramblers</a></li>
+              <li><a href="http://dev.drpharm-usa.com/products/coming_soon">Coating Machines</a></li>
+              <li><a href="http://dev.drpharm-usa.com/products/coming_soon">Fluid Bed Dryers</a></li>
+              <li><a href="http://dev.drpharm-usa.com/products/coming_soon">Wet Granulators</a></li>
+              <li><a href="http://dev.drpharm-usa.com/products/coming_soon">Bins &amp; Blenders</a></li>
+            </ul>
+          </li>
+          <li><a href="http://dev.drpharm-usa.com/parts">Replacement Parts</a></li>
+          <li><a href="http://dev.drpharm-usa.com/tech_support">Technical Support</a></li>
+          <li><a href="http://dev.drpharm-usa.com/services">Services</a></li>
+          <!-- <li><a href="#">Blog</a></li> -->
+          <li><a href="http://dev.drpharm-usa.com/events">Events</a></li>
+          <li id="last-child"><a href="http://dev.drpharm-usa.com/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div><!--end container-->
+  </nav>
+  <div class="container">
+    <div class="row product-row">
+      <div class="col-md-6 col-md-push-6 col-xs-12" style="padding:0;">
+        <div id="tablet_press_table" class="panel panel-primary">
+          <div id="tablet_press" class="panel-heading"><h1 id="table_title" class="text-center">GZP / ZPT - 370</h1></div>
+          <h4 style="display:inline-block; vertical-align:middle; margin:0 5px;; font-size: 1.5em;">Tooling Size:</h4>
+          <ul id="tooling-size-tabs" class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#d-tool">D</a></li>
+            <li><a data-toggle="tab" href="#b-tool">B</a></li>
+            <li><a data-toggle="tab" href="#bb-tool">BB</a></li>
+            <!--<li><a data-toggle="tab" href="#menu3">Menu 3</a></li>-->
+          </ul>
+          <div class="tab-content">
+            <div id="d-tool" class="tab-pane fade in active">
+              <table class="product-table table table-hover">
+                <tr>
+                  <th>Model: </th>
+                  <th>GZP-26</th>
+                </tr>
+                <tr>
+                  <th>Number of Stations: </th>
+                  <th>26</th>
+                </tr>
+                <tr>
+                  <th>Max Output(Tablets/Hour): </th>
+                  <th>34,000 - 171,000</th>
+                </tr>
+                <tr>
+                  <th>RPM: </th>
+                  <th>22-110</th>
+                </tr>
+                <tr>
+                  <th>Main Pressure: </th>
+                  <th>100 kN (11 tons)</th>
+                </tr>
+                <tr>
+                  <th>Pre Pressure: </th>
+                  <th>14 kN (1.5 tons)</th>
+                </tr>
+                <tr>
+                  <th>Max Tablet Diameter: </th>
+                  <th>&#8960;25 mm</th>
+                </tr>
+                <tr>
+                  <th>Max Length of Irregular Tablet: </th>
+                  <th>25 mm</th>
+                </tr>
+                <tr>
+                  <th>Diameter of Die: </th>
+                  <th>&#8960;38.1 mm</th>
+                </tr>
+                <tr>
+                  <th>Max Filling Depth: </th>
+                  <th>20 mm</th>
+                </tr>
+                <tr>
+                  <th>Diameter of Punch: </th>
+                  <th>&#8960;25.35 mm</th>
+                </tr>
+                <tr>
+                  <th>Main Motor Power: </th>
+                  <th>7.5kW (10 HP)</th>
+                </tr>
+                <tr>
+                  <th>Power Requirements: </th>
+                  <th>220 V (3 Ph 60 Hz)</th>
+                </tr>
+                <tr>
+                  <th>Dimensions (LxWxH): </th>
+                  <th>820x1100x1750 mm (32"x43"x69")</th>
+                </tr>
+                <tr>
+                  <th>Net Weight: </th>
+                  <th>1600 kg (3527 lbs)</th>
+                </tr>
+              </table>
+            </div>
+            <div id="b-tool" class="tab-pane fade">
+              <table class="product-table table table-hover">
+                <tr>
+                  <th>Model: </th>
+                  <th>GZP-32</th>
+                </tr>
+                <tr>
+                  <th>Number of Stations: </th>
+                  <th>32</th>
+                </tr>
+                <tr>
+                  <th>Max Output(Tablets/Hour): </th>
+                  <th>40,000-211,000</th>
+                </tr>
+                <tr>
+                  <th>RPM: </th>
+                  <th>22-110</th>
+                </tr>
+                <tr>
+                  <th>Main Pressure: </th>
+                  <th>100 kN (11 tons)</th>
+                </tr>
+                <tr>
+                  <th>Pre Pressure: </th>
+                  <th>14 kN (1.5 tons)</th>
+                </tr>
+                <tr>
+                  <th>Max Tablet Diameter: </th>
+                  <th>&#8960;16 mm</th>
+                </tr>
+                <tr>
+                  <th>Max Length of Irregular Tablet: </th>
+                  <th>19 mm</th>
+                </tr>
+                <tr>
+                  <th>Diameter of Die: </th>
+                  <th>&#8960;30.16 mm</th>
+                </tr>
+                <tr>
+                  <th>Max Filling Depth: </th>
+                  <th>20 mm</th>
+                </tr>
+                <tr>
+                  <th>Diameter of Punch: </th>
+                  <th>&#8960;19 mm</th>
+                </tr>
+                <tr>
+                  <th>Main Motor Power: </th>
+                  <th>7.5kW (10 HP)</th>
+                </tr>
+                <tr>
+                  <th>Power Requirements: </th>
+                  <th>220 V (3 Ph 60 Hz)</th>
+                </tr>
+                <tr>
+                  <th>Dimensions (LxWxH): </th>
+                  <th>820x1100x1750 mm (32"x43"x69")</th>
+                </tr>
+                <tr>
+                  <th>Net Weight: </th>
+                  <th>1600 kg (3527 lbs)</th>
+                </tr>
+              </table>
+            </div>
+            <div id="bb-tool" class="tab-pane fade">
+              <table class="product-table table table-hover">
+                <tr>
+                  <th>Model: </th>
+                  <th>GZP-40</th>
+                </tr>
+                <tr>
+                  <th>Number of Stations: </th>
+                  <th>40</th>
+                </tr>
+                <tr>
+                  <th>Max Output(Tablets/Hour): </th>
+                  <th>52,000-264,000</th>
+                </tr>
+                <tr>
+                  <th>RPM: </th>
+                  <th>22-110</th>
+                </tr>
+                <tr>
+                  <th>Main Pressure: </th>
+                  <th>100 kN (11 tons)</th>
+                </tr>
+                <tr>
+                  <th>Pre Pressure: </th>
+                  <th>14 kN (1.5 tons)</th>
+                </tr>
+                <tr>
+                  <th>Max Tablet Diameter: </th>
+                  <th>&#8960;13 mm</th>
+                </tr>
+                <tr>
+                  <th>Max Length of Irregular Tablet: </th>
+                  <th>16 mm</th>
+                </tr>
+                <tr>
+                  <th>Diameter of Die: </th>
+                  <th>&#8960;24 mm</th>
+                </tr>
+                <tr>
+                  <th>Max Filling Depth: </th>
+                  <th>16 mm</th>
+                </tr>
+                <tr>
+                  <th>Diameter of Punch: </th>
+                  <th>&#8960;19 mm</th>
+                </tr>
+                <tr>
+                  <th>Main Motor Power: </th>
+                  <th>7.5kW (10 HP)</th>
+                </tr>
+                <tr>
+                  <th>Power Requirements: </th>
+                  <th>220 V (3 Ph 60 Hz)</th>
+                </tr>
+                <tr>
+                  <th>Dimensions (LxWxH): </th>
+                  <th>820x1100x1750 mm (32"x43"x69")</th>
+                </tr>
+                <tr>
+                  <th>Net Weight: </th>
+                  <th>1200 kg (2645 lbs)</th>
+                </tr>
+              </table>
+            </div>
                   <!--
                   <div id="menu3" class="tab-pane fade">
                     <h3>Menu 3</h3>
@@ -313,21 +322,21 @@
               <a class="buynow-button btn" href="http://dev.drpharm-usa.com/products/RFQ/tabletpress_RFQ">Request A Quote!</a>
             </div>
           </div><!--endcol-->
-        <div class="col-md-6 col-md-pull-6 col-xs-12">
-          <div id="carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="http://dev.drpharm-usa.com/assets/images/products/tablet_press/GZP-ZPT/tablet_GZP40_front.jpg" style="width:80%; margin:auto; max-width:540px;"class="img-responsive"alt="Front View of GZP-16 (D-Size Tablet Press Tootling)" >
-              </div>
-              <div class="item">
-                <img src="http://dev.drpharm-usa.com/assets/images/products/tablet_press/GZP-ZPT/tablet_GZP40_front2.jpg" style="width:80%; margin:auto; max-width:540px;"class="img-responsive" alt="GZP-30 Tablet Press Front View">
-              </div> 
-              <div class="item">
-                <img src="http://dev.drpharm-usa.com/assets/images/products/tablet_press/GZP-ZPT/tablet_GZPZPT_feeder.jpg" class="product-carousel-img" alt="Forced Feeding System of GZP/ZPT-265 Tablet Press Model" >
+          <div class="col-md-6 col-md-pull-6 col-xs-12">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="http://dev.drpharm-usa.com/assets/images/products/tablet_press/GZP-ZPT/tablet_GZP40_front.jpg" style="width:80%; margin:auto; max-width:540px;"class="img-responsive"alt="Front View of GZP-16 (D-Size Tablet Press Tootling)" >
+                </div>
+                <div class="item">
+                  <img src="http://dev.drpharm-usa.com/assets/images/products/tablet_press/GZP-ZPT/tablet_GZP40_front2.jpg" style="width:80%; margin:auto; max-width:540px;"class="img-responsive" alt="GZP-30 Tablet Press Front View">
+                </div> 
+                <div class="item">
+                  <img src="http://dev.drpharm-usa.com/assets/images/products/tablet_press/GZP-ZPT/tablet_GZPZPT_feeder.jpg" class="product-carousel-img" alt="Forced Feeding System of GZP/ZPT-265 Tablet Press Model" >
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </div> <!--endrow-->
         <div class="row">
           <div class="col-xs-12">
@@ -392,88 +401,152 @@
           <li><h4>Meets all cGMP and FDA requirements</h4></li>
           <li><h4>Automatic weight control features</h4></li>
           <li><h4>Touch screen HMI</h4></li>
-            <li><h4>Individual punch pressures displayed on HMI</h4></li> 
-              <li><h4>Automatic central lubrication System</h4></li> 
-              <li><h4>Force-feed powder system prevents segregation of disparate granule sizes</h4></li> 
-              <li><h4>Dust collection unit and tablet deduster included in bundle price</h4></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <h2>Videos</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-12 video_container_3">
-            <iframe src="http://www.youtube.com/embed/tX2cvy3Rq-4?&showinfo=0&autohide=1"></iframe>
-            <a class="video" href="http://www.youtube.com/watch?v=tX2cvy3Rq-4"></a> 
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 video_container_3">
-            <iframe src="http://www.youtube.com/embed/aepfZ0kFl18?&showinfo=0&autohide=1"></iframe>
-            <a class="video" href="http://www.youtube.com/watch?v=aepfZ0kFl18"></a> 
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 video_container_3">
-            <iframe src="http://www.youtube.com/embed/rwI4c_sIeJM?&showinfo=0&autohide=1"></iframe>
-            <a class="video" href="http://www.youtube.com/watch?v=rwI4c_sIeJM"></a> 
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <h2>Downloads</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <ul id="download_list">
-              <li><a class="download_label" href="http://dev.drpharm-usa.com/assets/downloads/GZP-ZPT.pdf" download> 
-                <img  src="http://dev.drpharm-usa.com/assets/images/logos/logo_adobe_pdf.png" alt="Adobe PDF logo">
-              </a>
-              <p class="download_label">GZP/ZPT-265 Brochure</p>
-            </li> 
-            <li><a class="download_label" href="http://dev.drpharm-usa.com/assets/downloads/TabletPress_Overview.pdf" download> 
-              <img  src="http://dev.drpharm-usa.com/assets/images/logos/logo_adobe_pdf.png" alt="Adobe PDF logo">
-            </a>
-            <p class="download_label">Tablet Press Brochure</p>
-          </li> 
-        </ul>   
+          <li><h4>Individual punch pressures displayed on HMI</h4></li> 
+          <li><h4>Automatic central lubrication System</h4></li> 
+          <li><h4>Force-feed powder system prevents segregation of disparate granule sizes</h4></li> 
+          <li><h4>Dust collection unit and tablet deduster included in bundle price</h4></li>
+        </ul>
       </div>
     </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Videos</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12 video_container_3">
+        <iframe src="http://www.youtube.com/embed/tX2cvy3Rq-4?&showinfo=0&autohide=1"></iframe>
+        <a class="video" href="http://www.youtube.com/watch?v=tX2cvy3Rq-4"></a> 
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 video_container_3">
+        <iframe src="http://www.youtube.com/embed/aepfZ0kFl18?&showinfo=0&autohide=1"></iframe>
+        <a class="video" href="http://www.youtube.com/watch?v=aepfZ0kFl18"></a> 
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12 video_container_3">
+        <iframe src="http://www.youtube.com/embed/rwI4c_sIeJM?&showinfo=0&autohide=1"></iframe>
+        <a class="video" href="http://www.youtube.com/watch?v=rwI4c_sIeJM"></a> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Downloads</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <ul id="download_list">
+          <li><a class="download_label" href="http://dev.drpharm-usa.com/assets/downloads/GZP-ZPT.pdf" download> 
+            <img  src="http://dev.drpharm-usa.com/assets/images/logos/logo_adobe_pdf.png" alt="Adobe PDF logo">
+          </a>
+          <p class="download_label">GZP/ZPT-265 Brochure</p>
+        </li> 
+        <li><a class="download_label" href="http://dev.drpharm-usa.com/assets/downloads/TabletPress_Overview.pdf" download> 
+          <img  src="http://dev.drpharm-usa.com/assets/images/logos/logo_adobe_pdf.png" alt="Adobe PDF logo">
+        </a>
+        <p class="download_label">Tablet Press Brochure</p>
+      </li> 
+    </ul>   
   </div>
+</div>
+</div>
 
 <footer class="footer">
-  <div id="footer-container" class="container">
-    <div id="top-footer" class="row text-center">
-      <div class="col-md-4 col-xs-12">
-        <p>Sales &amp; Support</p>
-        <a href="mailto:sales@drpharm-usa.com" target="_top">sales@drpharm-usa.com</a>
-      </div>
-      <div class="col-md-4 col-xs-12">
-        <h4>Dr. Pharm USA<br>1605 E. 69th Ave<br>Denver, CO &#183; USA 80229</h4>
-      </div>
-      <div class="col-md-4 col-xs-12">
-        <p>Parts &amp; Services</p>
-        <a href="mailto:parts@drpharm-usa.com" target="_top">parts@drpharm-usa.com</a>
+  <div id="top-footer" class="row text-center" style="display:flex; align-items:center; flex-wrap:wrap;">
+    <div class="col-md-4 col-xs-12 col-md-push-4">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <ul class="footer-product-list" style="list-style-type:none;">
+            <li><a href="http://dev.drpharm-usa.com/products/coming_soon">Bins &amp; Blenders</a></li>
+            <li><a href="http://dev.drpharm-usa.com/products/capsule_fillers">Capsule Fillers</a></li>
+            <li><a href="http://dev.drpharm-usa.com/products/coming_soon">Coating Machines</a></li>
+            <li><a href="http://dev.drpharm-usa.com/products/counters">Counting Lines</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <ul class="footer-product-list" style="list-style-type:none;">
+            <li><a href="http://dev.drpharm-usa.com/products/coming_soon">Fluid Bed Dryers</a></li>
+            <li><a href="http://dev.drpharm-usa.com/products/tablet_presses">Tablet Presses</a></li>
+            <li><a href="http://dev.drpharm-usa.com/products/unscramblers">Unscramblers</a></li>
+            <li><a href="http://dev.drpharm-usa.com/products/coming_soon">Wet Granulators</a></li>      
+          </ul>
+        </div>
       </div>
     </div>
-    <div id="bottom-footer" class="row text-center">
-      <div class="col-md-4">
-        <h6>&#169; Dr. Pharm USA. All Rights Reserved </h6>
+    <div class="col-md-4 col-xs-12 col-md-pull-4" style="margin: 20px 0 20px 0;">
+      <div class="row">
+        <div class="col-xs-12">
+          <h4 style="margin-bottom:0px;">Dr. Pharm USA<br>1605 E. 69th Ave<br>Denver, CO &#183; USA 80229</h4>
+          <h4 style="margin-top:0px; margin-bottom:5px;"><strong>1-866-778-7826</strong></h4>
+        </div>
       </div>
-      <div class="col-md-4">
-        <a href="http://dev.drpharm-usa.com/contact">Contact Us &#183; </a>
-        <a href="http://dev.drpharm-usa.com/tech_resources">Resources &#183; </a>
-        <a href="http://dev.drpharm-usa.com/privacy">Privacy &#183; </a>
-        <a target="_blank" href="http://dev.drpharm-usa.com/assets/downloads/terms.pdf">Terms &#183; </a>
-        <a href="http://dev.drpharm-usa.com/financing">Financing</a>
+      <div class="row">
+        <div class="col-xs-12">  
+          <p>Sales &amp; Support</p>
+          <a href="mailto:sales@drpharm-usa.com" target="_top">sales@drpharm-usa.com</a>
+        </div>
       </div>
-      <div class="col-md-4 hidden-sm hidden-xs">
+      <div class="row">
+        <div class="col-xs-12" style="margin-bottom:10px;">
+          <p>Parts &amp; Services</p>
+          <a href="mailto:parts@drpharm-usa.com" target="_top">parts@drpharm-usa.com</a>
+        </div>
       </div>
+    </div>
+    <div class="col-md-4 col-xs-12" style="color:black; text-align:center;">
+      <div class="row" style="margin-top:10px;">
+        <ul class="social-list">
+          <li><a href="http://linkedin.com"><img src="http://dev.drpharm-usa.com/assets/images/logos/logo_linkedin_white.png" width="25"></a></li>
+          <li><a href="http://facebook.com"><img src="http://dev.drpharm-usa.com/assets/images/logos/logo_facebook_white.png" width="25"></a></li>
+          <li><a href="http://youtube.com"><img src="http://dev.drpharm-usa.com/assets/images/logos/logo_youtube_white.png" width="25"></a></li>
+        </ul>
+      </div>
+      <div class="row">
+        <h3>Newsletter Sign Up</h3>
+        <p>Get up to date News, Sales Notices, and Exclusive Offers!</p>
+      </div>
+      <form id="newsForm" action="assets/php/newsletter_engine.php" method="post">
+        <div class="row">
+          <div class="col-sm-5 col-sm-offset-1 col-xs-12" style="padding:0 5px 0 5px;">
+            <div class="form-group form-inline" style="color:black;">
+              <input style="dipslay:inline; width:100%; " type="text" class="form-control" name="fnameInput" placeholder="First Name"> 
+            </div>
+          </div>
+          <div class="col-sm-5 col-xs-12" style="padding:0 5px 0 5px;">
+            <div class="form-group form-inline" style="color:black;">
+              <input style="display:inline; width:100%; " type="text" class="form-control" name="lnameInput" placeholder="Last Name"> 
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-7 col-sm-offset-1 col-xs-12" style="padding:0 5px 0 5px;">
+            <div class="form-group form-inline"style="color:black;">
+              <input style="display:inline; width:100%; "type="email" class="form-control" name="emailInput" placeholder="E-mail">
+            </div>
+          </div>
+          <div class="col-sm-3 col-xs-12"style="padding:0 5px 0 5px; margin-bottom:20px;">
+            <button style="display:inline; width:100%; max-width:364px;" type="submit" name="submit" value="Submit" class="btn btn-default" >Submit</button>
+          </div> 
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="bottom-footer" class="row text-center">
+    <div class="col-md-4">
+      <h6>&#169; Dr. Pharm USA. All Rights Reserved </h6>
+    </div>
+    <div class="col-md-4">
+      <a href="http://dev.drpharm-usa.com/contact">Contact Us &#183; </a>
+      <a href="http://dev.drpharm-usa.com/tech_resources">Resources &#183; </a>
+      <a href="http://dev.drpharm-usa.com/privacy">Privacy &#183; </a>
+      <a target="_blank" href="http://dev.drpharm-usa.com/assets/downloads/terms.pdf">Terms &#183; </a>
+      <a href="http://dev.drpharm-usa.com/financing">Financing</a>
+    </div>
+    <div class="col-md-4 hidden-sm hidden-xs">
     </div>
   </div>
 </footer>
-  
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- RUNNING ON LOCAL BOX (NO INTRANETS)
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
  -->
