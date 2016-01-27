@@ -1088,7 +1088,7 @@ html {
 }
 body {
   font-family: 'Oswald', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
@@ -1128,9 +1128,7 @@ img {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  margin-right: 15%;
-  margin-left: 15%;
-  width: 70%;
+  width: 100%;
 }
 .img-rounded {
   border-radius: 6px;

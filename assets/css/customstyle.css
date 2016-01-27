@@ -155,7 +155,8 @@
 }
 .mobile-img {
 	width: 100%;
-	min-width: 18em;
+	min-width: 16em;
+	max-width: 22em;
 }
 
 
@@ -426,6 +427,11 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+.rfq_form_button {
+	max-width: 320px;
+	padding: 20px 10px 20px 10px;
+	font-size: 1.5em; 
+}
 
 .error {
 	color: #a94442;
@@ -607,6 +613,9 @@
  	padding: 0;
  	padding: 0 20px;
  }
+ h1 {
+ 	font-size: 3em;
+ }
 }
 @media (max-width: 768px) {
  .bio-row-1{
@@ -678,6 +687,15 @@
 	text-align: center;
 }
 .rfq_form h1{
+	font-size: 2.5em;
+}
+.rfq_form_button {
+	max-width: 320px;
+	padding: 10px;
+	font-size: 1.5em; 
+}
+
+h1 {
 	font-size: 2.5em;
 }
 
