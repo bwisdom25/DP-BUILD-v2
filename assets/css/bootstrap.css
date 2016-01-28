@@ -4346,7 +4346,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav {
     border-color: transparent;
     background-color: transparent;
-    position: absolute;
+    position: relative;
     bottom: -4px;
     left: 0;
     right: 0;
