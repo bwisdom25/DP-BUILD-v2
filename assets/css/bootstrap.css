@@ -5734,16 +5734,19 @@ a.list-group-item-danger.active:focus {
   margin-bottom: 0px;
 }
 
-.panel-primary  h3 a {
+.panel-primary  a {
   display: block;
   padding: 10px;
   width: 100%;
-}
-
-.panel-primary  a:hover {
-  background-color: #005da6;
+  background-color:#005da6; 
   color: #fff;
+
+}
+.panel-primary  a:hover {
+  background-color: #fff;
+  color: #005da6;
   text-decoration: none;
+
 }
 
 .panel-success {
