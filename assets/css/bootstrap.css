@@ -4335,12 +4335,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #C51A2D;
   margin-top: -2px;
   margin-bottom: 0px;
-  margin-left: -2px;
-  margin-right:-2px;
   background-color: #FFF;
   border-bottom: 2px solid #fff;
   border-color: #000;
   border-radius: 5px;
+  bottom: -2px;
 }
 @media (min-width: 768px) {
   .navbar-nav {

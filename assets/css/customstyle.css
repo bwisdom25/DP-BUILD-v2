@@ -303,6 +303,10 @@
 	max-height: 320px;
 	border-radius: 10px;
 }
+.table-img-w {
+	width: 100%;
+	border-radius: 10px;
+}
 .producttype-table-description p{
 	padding-left: 10px;
 	padding-right: 10px;
@@ -341,6 +345,13 @@
   background-color: rgb(204,45,48);
 }
 
+#counter_table .prod-tabs {
+	padding-left: 0;
+	 padding-right: 0;
+	 padding-top:115px;
+	 padding-bottom:115px; 
+	 background-color: rgb(0,91,191);
+}
 #tooling-size-label{
 	display:inline-block; 
 	vertical-align:middle; 
@@ -719,6 +730,10 @@ figcaption {
 	float: left;
 }
 #tablet_press_table .prod-tabs {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+#counter_table .prod-tabs {
 	padding-top: 0;
 	padding-bottom: 0;
 }
