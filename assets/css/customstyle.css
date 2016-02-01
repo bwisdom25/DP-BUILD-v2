@@ -284,7 +284,7 @@
 	font-family: 'Rajdhani', sans-serif;
 	margin-bottom: 0px;
 	font-weight: bold;
-	font-size: 1.23em;
+	font-size: 1.1em;
 }
 .producttype-table-description{
 	max-height:322px; 
@@ -400,6 +400,7 @@
 	border-radius: 0 0 0 5px;
 }
 #table_title {
+	font-size: 2.5em;
 	letter-spacing: 0.25vw;
 }
 .buynow-button{
@@ -468,7 +469,6 @@
 .video_container_3  iframe {
 	border-width: 0;
 	width:100%; 
-	
 }
 
 .video {
@@ -796,7 +796,7 @@ h1 {
 		margin-bottom: 0px;
 	}
 	.product-table {
-	font-size: 1.0em;
+	font-size: 0.9em;
 }
 
 }
