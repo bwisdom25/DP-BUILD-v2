@@ -394,6 +394,8 @@
 	border: none;
 	border-radius: 0 0 5px 5px;
 	display: inline-block;
+	background-color: #fff;
+	color: rgb(204,45,48);
 }
 
 #tooling-size-tabs li:last-child a {
