@@ -332,12 +332,31 @@
 	background-color: #fff;
 	color: rgb(204,45,48);
 }
+#unscrambler_table {
+	border-color: rgb(204,45,48);
+}
+
+#unscrambler_table a{
+	background-color: rgb(204,45,48);
+	color:#fff;
+}
+#unscrambler_table a:hover{
+	background-color: #fff;
+	color: rgb(204,45,48);
+}
+#unscrambler_table .prod-tabs{
+	padding-left: 0;
+	 padding-right: 0;
+	 padding-top:96px;
+	 padding-bottom:96px; 
+	 background-color:rgb(204,45,48)
+}
 
 #tablet_press_table .prod-tabs {
 	 padding-left: 0;
 	 padding-right: 0;
-	 padding-top:46px;
-	 padding-bottom:46px; 
+	 padding-top:96px;
+	 padding-bottom:96px; 
 	 background-color:rgb(204,45,48)
 }
 #tablet_press{
@@ -728,6 +747,10 @@ figcaption {
 	width: 50%;
 	cursor: pointer;
 	float: left;
+}
+#unscrambler_table .prod-tabs {
+	 padding-top:0px;
+	 padding-bottom:0px; 
 }
 #tablet_press_table .prod-tabs {
 	padding-top: 0;
