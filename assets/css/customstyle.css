@@ -250,6 +250,18 @@
 	margin-bottom: 10px;
 	top: 0px;
 }
+.carousel-caption .black {
+  position: absolute;
+  right: 15%;
+  top: 10px;
+  left: 10%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+  text-align: left;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .95);
+}
 
 .item .thumb {
 	width: 25%;
