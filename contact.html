@@ -111,12 +111,59 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12"> 
-            <h1>Contact Us</h1>
+            <h1>How to Contact Dr. Pharm USA</h1>
           </div>
         </div>
-        <form id="contactForm" action="http://dev.drpharm-usa.com/assets/php/contact_engine.php" method="POST" >
+        <div class="row text-center">
+          <div class="col-xs-12">
+            <p style="font-size: 1.25em;">All sales, parts and technical support can be reach through our phone number <strong>1-866-778-7826</strong>. You can also reach us by filling out the form below. Our facilities are located in the Denver metro area off of I-76 and I-25. Directions to our facility from Denver International Airport are also listed below.</p>
+          </div>
+        </div>
+        <div class="row text-center" style="margin-top:20px; margin-bottom:20px;">
+          <div class="col-xs-12">
+            <p style="font-size:2em; margin:0">Dr. Pharm USA</p>
+            <p style="font-size:2em; margin:0">1605 E. 69th Ave.</p>
+            <p style="font-size:2em; margin:0">Denver, CO 80229 </p>
+            <p style="font-size:2em; margin:0;"><strong>1-866-778-7826</strong></p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <h2>Map</h2>
+          <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
+            <div style="display:inline-block;width:100%; height:400px; background-color:#ccc; text-align:center;" id="map"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="text-center">Directions from Denver International Airport</h2>
+          </div>
+        </div>
+        <div class="row product-row" style="margin-top:20px; margin-bottom:20px;">
+          <div class="col-md-6 col-md-push-6 hidden-xs">
+            <img style="width:100%;"src="http://dev.drpharm-usa.com/assets/images/marketing/map_rse_directions.jpg" alt="Directions Map to Right Stuff Equipment">
+          </div>
+          <div class="col-md-6 col-md-pull-6 col-xs-12">
+            
+            <ol type="1">
+              <li>Head North on Pena Blvd</li>
+              <li>Continune on Pena Blvd</li>
+              <li>Merge onto I-70W</li>
+              <li>Keep Right to Merge onto I-270W Towards Ft. Collins/Boulder via Exit 279A </li>
+              <li>Continue on I-270W, Take Exit 1 for Ft. Morgan/Grand Junction KEEP RIGHT</li>
+              <li>Immediately Take the Exit for York Street</li>
+              <li>Turn Left on York Street</li>
+              <li>Take a Sharp Right onto 68th Avenue</li>
+              <li>Turn Right on Franklin St.</li>
+              <li>Right Stuff Equipment is at the bottom of the hill</li>
+            </ol>
+          </div>
+        </div>
+         <form id="contactForm" action="http://dev.drpharm-usa.com/assets/php/contact_engine.php" method="POST" >
           <div class="row">
-            <div class="form-border col-lg-6 col-sm-8 col-xs-12">
+            <div class="col-xs-12 text-center">
+              <h2>Contact Form</h2>
+            </div>
+            <div class="form-border col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
               <div class="row">
                 <div class="col-sm-6 col-xs-12">
                   <div class="form-group ">
@@ -131,7 +178,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="row">
                 <div class="col-sm-6 col-xs-12">
                   <div class="form-group">
@@ -167,7 +213,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="form-border col-lg-6 col-sm-8 col-xs-12">
+            <div class="form-border col-lg-6 col-lg-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
               <div class="row">
                 <div class="col-xs-12">
                   <div class="form-group">
@@ -180,7 +226,7 @@
           </div>
 
           <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12" style="padding:0;">
+            <div class="col-lg-2 col-lg-offset-3 col-md-2 col-md-offset-4 col-sm-4 col-sm-offset-2 col-xs-12" style="padding:0;">
               <input type="submit" class="btn btn-primary btn-lg" style="width:100%;" value="Submit">
             </div>
           </div>
@@ -273,7 +319,7 @@
           </div>
           <div class="col-md-4">
             <a href="http://dev.drpharm-usa.com/contact">Contact Us &#183; </a>
-            <a href="http://dev.drpharm-usa.com/tech_resources">Resources &#183; </a>
+            <a href="http://dev.drpharm-usa.com/services">Services &#183; </a>
             <a href="http://dev.drpharm-usa.com/privacy">Privacy &#183; </a>
             <a target="_blank" href="http://dev.drpharm-usa.com/assets/downloads/terms.pdf">Terms &#183; </a>
             <a href="http://dev.drpharm-usa.com/financing">Financing</a>
@@ -319,5 +365,23 @@
 
       });
       </script>
+      <script>
+        function initMap() {
+          var myLatLng = {lat: 39.8221801, lng: -104.9683726};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatLng,
+            zoom: 16
+          }); 
+          var image = 'http://dev.drpharm-usa.com/assets/images/logos/logo_drpharm_D_30x30.png'
+          var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Dr. Pharm USA',
+            icon: image
+          });
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+
     </body>
     </html>

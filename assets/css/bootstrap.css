@@ -4306,7 +4306,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
-    width: auto;
+    width: 100%;
     margin-top: 0;
     background-color: #fff;
     border: 2px solid #000;
