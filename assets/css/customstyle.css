@@ -159,6 +159,9 @@
 	max-width: 22em;
 }
 
+.home-description{
+	padding:10px 50px 10px 50px;
+}
 
 
 #footer-container {
@@ -711,6 +714,10 @@ figcaption {
  }
 }
 @media (max-width: 768px) {
+.home-description{
+	padding:10px 0px 10px 0px;
+}
+
  .bio-row-1{
  	text-align: center;
  }
